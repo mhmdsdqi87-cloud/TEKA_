@@ -289,7 +289,7 @@ body.ready .hero-foot{animation:fadeUp 1s var(--e) 1.1s both}
 .arch-stepno{font:600 .78rem var(--en);letter-spacing:.3em;color:rgba(233,200,118,.6);display:block;text-align:center;margin-bottom:.7rem;position:relative}
 .arch-q{text-align:center;font-size:clamp(1.25rem,2.8vw,1.8rem);font-weight:800;color:var(--paper);margin-bottom:1.8rem;position:relative;min-height:2.4em}
 .arch-q em{font-style:normal;color:var(--gold-hi)}
-.arch-opts{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:.65rem;position:relative}
+.arch-opts{display:grid;grid-template-columns:repeat(auto-fill,minmax(140px,1fr));gap:.65rem;position:relative}
 .arch-opt{border:1px solid var(--line-l);background:var(--black2);color:rgba(250,247,238,.88);border-radius:16px;padding:.85rem .5rem;
   font-weight:700;font-size:.86rem;transition:.25s var(--e);display:flex;flex-direction:column;align-items:center;gap:.5rem;position:relative}
 .arch-opt:hover{border-color:var(--gold);transform:translateY(-3px)}
@@ -307,45 +307,45 @@ body.ready .hero-foot{animation:fadeUp 1s var(--e) 1.1s both}
 .ar-meta span{border:1px solid var(--line-g);color:var(--gold-hi);border-radius:999px;padding:.25rem 1rem;font-size:.78rem;font-weight:700}
 #archFrame{width:100%;height:520px;border:none;border-radius:18px;background:#fff;position:relative}
 .ar-actions{display:flex;gap:.7rem;flex-wrap:wrap;margin-top:1.3rem;position:relative}
-/* ---------- موزه BMW ---------- */
-#bmw{background:var(--black);color:var(--paper);position:relative;overflow:hidden}
-#bmw .sec-no{color:var(--gold-hi)}
-#bmw .sec-title em{color:var(--gold-hi)}
-.bmw-wrap{display:grid;grid-template-columns:1fr 1.4fr;gap:4rem;align-items:center}
-.bmw-copy p{color:rgba(250,247,238,.7);margin-top:1.2rem;max-width:440px}
-.bmw-hint{font-weight:700;color:var(--gold-hi)!important}
-.bmw-stage{position:relative;background:#0C0906;border:1px solid var(--line-g);border-radius:26px;overflow:hidden;box-shadow:0 40px 100px rgba(0,0,0,.6)}
-#bmwCanvas{display:block;width:100%;height:460px;cursor:grab;touch-action:none;position:relative}
-#bmwCanvas:active{cursor:grabbing}
-.bmw-tag{position:absolute;top:1.1rem;right:1.3rem;font:500 .68rem var(--en);letter-spacing:.28em;color:rgba(233,200,118,.7);pointer-events:none;direction:ltr}
-.bmw-models{display:flex;gap:.5rem;flex-wrap:wrap;padding:1rem 1.3rem;border-top:1px solid var(--line-l);background:var(--black)}
-.bmw-model{border:1px solid var(--line-l);color:rgba(250,247,238,.8);border-radius:999px;padding:.5rem 1.2rem;font-size:.82rem;font-weight:700;transition:.3s}
-.bmw-model:hover{border-color:var(--gold);color:var(--gold-hi)}
-.bmw-model.on{background:var(--gold);color:var(--black);border-color:var(--gold)}
-.bmw-cap{padding:.9rem 1.3rem 1.2rem;font-size:.85rem;color:rgba(250,247,238,.65);border-top:1px dashed var(--line-l)}
-.bmw-cap b{color:var(--gold-hi)}
-.bmw-fallback{display:none;padding:4rem 2rem;text-align:center;color:rgba(250,247,238,.6);font-size:.95rem}
+/* ---------- فراسویِ طلایی ---------- */
+#universe{background:var(--black);color:var(--paper);position:relative;overflow:hidden}
+#universe .sec-no{color:var(--gold-hi)}
+#universe .sec-title em{color:var(--gold-hi)}
+.uni-wrap{display:grid;grid-template-columns:1fr 1.4fr;gap:4rem;align-items:center}
+.uni-copy p{color:rgba(250,247,238,.7);margin-top:1.2rem;max-width:440px}
+.uni-hint{font-weight:700;color:var(--gold-hi)!important}
+.uni-stage{position:relative;background:#0B0805;border:1px solid var(--line-g);border-radius:26px;overflow:hidden;box-shadow:0 40px 100px rgba(0,0,0,.6)}
+#uniCanvas{display:block;width:100%;height:480px;cursor:grab;touch-action:none;position:relative}
+#uniCanvas:active{cursor:grabbing}
+.uni-tag{position:absolute;top:1.1rem;right:1.3rem;font:500 .68rem var(--en);letter-spacing:.28em;color:rgba(233,200,118,.7);pointer-events:none;direction:ltr}
+.uni-shapes{display:flex;gap:.5rem;flex-wrap:wrap;padding:1rem 1.3rem;border-top:1px solid var(--line-l);background:var(--black)}
+.uni-shape{border:1px solid var(--line-l);color:rgba(250,247,238,.8);border-radius:999px;padding:.5rem 1.2rem;font-size:.82rem;font-weight:700;transition:.3s}
+.uni-shape:hover{border-color:var(--gold);color:var(--gold-hi)}
+.uni-shape.on{background:var(--gold);color:var(--black);border-color:var(--gold)}
+.uni-cap{padding:.9rem 1.3rem 1.2rem;font-size:.85rem;color:rgba(250,247,238,.65);border-top:1px dashed var(--line-l)}
+.uni-cap b{color:var(--gold-hi)}
+.uni-fallback{display:none;padding:4rem 2rem;text-align:center;color:rgba(250,247,238,.6);font-size:.95rem}
 /* ---------- مودال‌ها / حساب ---------- */
-.modal{position:fixed;inset:0;z-index:2500;display:grid;place-items:center;padding:1rem;visibility:hidden;opacity:0;transition:opacity .35s var(--e),visibility .35s}
+.modal{position:fixed;inset:0;z-index:2500;display:grid;place-items:center;padding:.8rem;visibility:hidden;opacity:0;transition:opacity .35s var(--e),visibility .35s}
 .modal.open{visibility:visible;opacity:1}
 .m-bg{position:absolute;inset:0;background:rgba(20,16,10,.65);backdrop-filter:blur(6px)}
-.m-card{position:relative;background:var(--card);border-radius:22px;width:min(520px,100%);max-height:88svh;overflow-y:auto;
+.m-card{position:relative;background:var(--card);border-radius:22px;width:min(520px,100%);max-width:calc(100vw - 1.6rem);max-height:86svh;overflow-y:auto;
   transform:translateY(30px) scale(.97);transition:transform .45s var(--e);color:var(--ink);box-shadow:0 40px 100px rgba(20,16,10,.4)}
 .modal.open .m-card{transform:none}
 .m-x{position:absolute;top:.9rem;left:.9rem;width:38px;height:38px;border-radius:50%;background:var(--card);border:1px solid var(--line);display:grid;place-items:center;z-index:2;transition:.3s;color:var(--ink)}
 .m-x:hover{background:var(--ink);color:var(--paper)}
-.m-body{padding:2rem 2.2rem}
-.m-title{text-align:center;font-size:1.35rem;font-weight:800;margin-bottom:.2rem}
-.auth-tabs{display:flex;gap:.5rem;margin:1.2rem 0 1.6rem}
-.auth-tab{flex:1;border:1px solid var(--line);border-radius:999px;padding:.6rem;font-weight:700;font-size:.92rem;color:var(--ink2);transition:.3s;background:transparent}
+.m-body{padding:1.8rem 1.5rem;overflow-x:hidden}
+.m-title{text-align:center;font-size:1.3rem;font-weight:800;margin-bottom:.2rem}
+.auth-tabs{display:flex;gap:.5rem;margin:1.1rem 0 1.4rem}
+.auth-tab{flex:1;border:1px solid var(--line);border-radius:999px;padding:.6rem;font-weight:700;font-size:.9rem;color:var(--ink2);transition:.3s;background:transparent}
 .auth-tab.on{background:var(--ink);color:var(--paper);border-color:var(--ink)}
-.auth-form{display:flex;flex-direction:column;gap:1.1rem}
-.auth-form label{display:flex;flex-direction:column;gap:.4rem;font-size:.82rem;font-weight:700;color:var(--ink2)}
-.auth-form input{font-size:1rem;color:var(--ink);background:transparent;border:none;border-bottom:1.5px solid var(--line);padding:.55rem .1rem;transition:border-color .3s;width:100%;max-width:100%}
+.auth-form{display:flex;flex-direction:column;gap:.95rem;min-width:0}
+.auth-form label{display:flex;flex-direction:column;gap:.35rem;font-size:.82rem;font-weight:700;color:var(--ink2);min-width:0}
+.auth-form input{font-size:16px;color:var(--ink);background:transparent;border:none;border-bottom:1.5px solid var(--line);padding:.5rem .1rem;transition:border-color .3s;width:100%;min-width:0}
 .auth-form input:focus{outline:none;border-color:var(--gold-deep)}
-.auth-err{font-size:.8rem;color:#C4553A;font-weight:700;min-height:1.3em;text-align:center}
-.auth-note{font-size:.76rem;color:var(--ink2);border:1px dashed var(--line-g);border-radius:12px;padding:.7rem 1rem;line-height:1.8;overflow-wrap:anywhere}
-#userMenu{position:fixed;top:78px;left:1rem;z-index:2400;background:var(--black);color:var(--paper);border:1px solid var(--line-g);border-radius:16px;padding:1.1rem;max-width:calc(100vw - 2rem);min-width:240px;box-shadow:0 30px 70px rgba(20,16,10,.5);visibility:hidden;opacity:0;transform:translateY(-8px);transition:.3s var(--e)}
+.auth-err{font-size:.8rem;color:#C4553A;font-weight:700;min-height:1.2em;text-align:center}
+.auth-note{font-size:.74rem;color:var(--ink2);border:1px dashed var(--line-g);border-radius:12px;padding:.6rem .9rem;line-height:1.8;overflow-wrap:anywhere}
+#userMenu{position:fixed;top:74px;left:1rem;width:min(280px,calc(100vw - 2rem));z-index:2400;background:var(--black);color:var(--paper);border:1px solid var(--line-g);border-radius:16px;padding:1.1rem;box-shadow:0 30px 70px rgba(20,16,10,.5);visibility:hidden;opacity:0;transform:translateY(-8px);transition:.3s var(--e)}
 #userMenu.open{visibility:visible;opacity:1;transform:none}
 #umName{font-weight:800;font-size:1.02rem;display:block;overflow-wrap:anywhere}
 #umMail{font:500 .74rem var(--en);color:var(--gold-hi);direction:ltr;display:block;margin-top:.15rem;word-break:break-all}
@@ -468,9 +468,9 @@ body.ready .hero-foot{animation:fadeUp 1s var(--e) 1.1s both}
 .contact-meta{margin-top:1.6rem;font-size:.85rem;color:var(--ink2)}
 .contact-form{display:flex;flex-direction:column;gap:1.6rem;background:var(--card);border:1px solid var(--line);border-radius:22px;padding:2.4rem;box-shadow:0 30px 70px rgba(20,16,10,.08)}
 .f-row{display:grid;grid-template-columns:1fr 1fr;gap:1.6rem}
-.contact-form label{display:flex;flex-direction:column;gap:.5rem;font-size:.85rem;font-weight:700;color:var(--ink2)}
-.contact-form input,.contact-form textarea{font-size:1rem;color:var(--ink);background:transparent;border:none;
-  border-bottom:1.5px solid var(--line);padding:.55rem .1rem;resize:vertical;transition:border-color .3s;width:100%;max-width:100%}
+.contact-form label{display:flex;flex-direction:column;gap:.5rem;font-size:.85rem;font-weight:700;color:var(--ink2);min-width:0}
+.contact-form input,.contact-form textarea{font-size:16px;color:var(--ink);background:transparent;border:none;
+  border-bottom:1.5px solid var(--line);padding:.55rem .1rem;resize:vertical;transition:border-color .3s;width:100%;min-width:0}
 .contact-form input:focus,.contact-form textarea:focus{outline:none;border-color:var(--gold-deep)}
 .contact-form ::placeholder{color:rgba(110,100,82,.45)}
 .btn-lgw{justify-content:center}
@@ -551,7 +551,7 @@ body.chat-open #chatFab{transform:scale(0);opacity:0;pointer-events:none}
 .cmdk-item small{margin-inline-start:auto;font-size:.72rem;color:rgba(250,247,238,.45)}
 .cmdk-empty{padding:1.4rem;text-align:center;color:rgba(250,247,238,.5);font-size:.9rem}
 @media (max-width:1024px){
-  .neural-grid,.man-grid,.assist-grid,.contact-grid,.magic-grid,.kof-wrap,.bmw-wrap{grid-template-columns:1fr;gap:3rem}
+  .neural-grid,.man-grid,.assist-grid,.contact-grid,.magic-grid,.kof-wrap,.uni-wrap{grid-template-columns:1fr;gap:3rem}
   .founder-grid{grid-template-columns:1fr;gap:3.5rem}
   .man-stats{flex-direction:row;flex-wrap:wrap;gap:0 2.5rem}
   .stat{flex-direction:column;gap:.2rem;border:none!important;padding:1rem 0;align-items:flex-start}
@@ -578,17 +578,16 @@ body.chat-open #chatFab{transform:scale(0);opacity:0;pointer-events:none}
   #chatPanel{bottom:0;left:0;width:100vw;height:88svh;border-radius:22px 22px 0 0}
   .kof-card,.arch-card{padding:1.2rem 1rem 1rem}
   .kof-key{padding:.65rem .2rem;font-size:.92rem}
-  .m-body{padding:1.5rem 1.2rem}
+  .m-body{padding:1.4rem 1rem}
   .arch-opts{grid-template-columns:repeat(2,1fr)}
   #archFrame{height:420px}
-  #bmwCanvas{height:330px}
-  .modal{padding:.7rem}
+  #uniCanvas{height:340px}
 }
 @media (max-width:420px){
   .arch-opts{grid-template-columns:1fr 1fr}
-  .auth-tabs{margin:1rem 0 1.2rem}
-  .auth-form{gap:.9rem}
-  #userMenu{left:.7rem;right:.7rem;min-width:0}
+  .auth-tabs{margin:1rem 0 1.1rem}
+  .auth-form{gap:.85rem}
+  #userMenu{left:.6rem;right:.6rem;width:auto;min-width:0}
 }
 @media (prefers-reduced-motion:reduce){
   *,*::before,*::after{animation-duration:.01ms!important;animation-delay:0s!important;transition-duration:.01ms!important}
@@ -635,7 +634,7 @@ body.chat-open #chatFab{transform:scale(0);opacity:0;pointer-events:none}
   <symbol id="i-sci" viewBox="0 0 24 24"><path d="M9 3h6M10 3v6.5L4.8 18a2 2 0 0 0 1.8 3h10.8a2 2 0 0 0 1.8-3L14 9.5V3" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/><path d="M7.5 15h9" stroke="currentColor" stroke-width="1.6"/></symbol>
   <symbol id="i-code" viewBox="0 0 24 24"><path d="m8 8-5 4 5 4M16 8l5 4-5 4M13 5l-2.5 14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></symbol>
   <symbol id="i-arch" viewBox="0 0 24 24"><path d="M3 21h18M5 21V8l7-5 7 5v13M9 21v-5h6v5M9 11h.01M15 11h.01" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></symbol>
-  <symbol id="i-car" viewBox="0 0 24 24"><path d="M3 13l1.5-4.5A2 2 0 0 1 6.4 7h11.2a2 2 0 0 1 1.9 1.5L21 13v5h-2.5a2 2 0 0 1-4 0h-5a2 2 0 0 1-4 0H3v-5z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="M7 13h10" stroke="currentColor" stroke-width="1.6"/></symbol>
+  <symbol id="i-star" viewBox="0 0 24 24"><path d="M12 2c1.15 7.15 5.85 11.85 13 13-7.15 1.15-11.85 5.85-13 13-1.15-7.15-5.85-11.85-13-13 7.15-1.15 11.85-5.85 13-13z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></symbol>
 </svg>
 
 <div id="preloader" aria-hidden="true">
@@ -695,7 +694,7 @@ body.chat-open #chatFab{transform:scale(0);opacity:0;pointer-events:none}
   <div class="wrap hd-in">
     <a class="logo" href="#hero" id="logoBtn" aria-label="TEKA"><svg class="mono" dir="ltr"><use href="#mLogo"/></svg><span>TEKA</span></a>
     <nav class="nav" aria-label="ناوبری اصلی">
-      <a href="#hero">خانه</a><a href="#services">خدمت‌ها</a><a href="#kof">کوفه‌خانه</a><a href="#arch">معمار</a><a href="#bmw">موزه BMW</a><a href="#lab">امضای طلا</a><a href="#ai">هوشِ طلایی</a><a href="#magic">ذهن‌خوانی</a><a href="#founder">بنیان‌گذار</a><a href="#contact">تماس</a>
+      <a href="#hero">خانه</a><a href="#services">خدمت‌ها</a><a href="#kof">کوفه‌خانه</a><a href="#arch">معمار</a><a href="#universe">فراسوی طلایی</a><a href="#lab">امضای طلا</a><a href="#ai">هوشِ طلایی</a><a href="#magic">ذهن‌خوانی</a><a href="#founder">بنیان‌گذار</a><a href="#contact">تماس</a>
     </nav>
     <div class="hd-tools">
       <button class="hd-tool" id="sfxBtn" aria-pressed="true" title="صدای رابط"><svg class="ic"><use href="#i-voice"/></svg></button>
@@ -720,7 +719,7 @@ body.chat-open #chatFab{transform:scale(0);opacity:0;pointer-events:none}
   <a href="#services"><small>۰۲</small>خدمت‌ها</a>
   <a href="#kof"><small>۰۳</small>کوفه‌خانه</a>
   <a href="#arch"><small>۰۴</small>معمارِ طلایی</a>
-  <a href="#bmw"><small>۰۵</small>موزه BMW</a>
+  <a href="#universe"><small>۰۵</small>فراسوی طلایی</a>
   <a href="#lab"><small>۰۶</small>امضای طلا</a>
   <a href="#ai"><small>۰۷</small>هوشِ طلایی</a>
   <a href="#magic"><small>۰۸</small>ذهن‌خوانی</a>
@@ -730,7 +729,7 @@ body.chat-open #chatFab{transform:scale(0);opacity:0;pointer-events:none}
 
 <nav id="rail" aria-label="ناوبری سریع">
   <a href="#hero" data-t="خانه"></a><a href="#services" data-t="خدمت‌ها"></a><a href="#kof" data-t="کوفه‌خانه"></a>
-  <a href="#arch" data-t="معمار طلایی"></a><a href="#bmw" data-t="موزه BMW"></a><a href="#lab" data-t="امضای طلا"></a>
+  <a href="#arch" data-t="معمار طلایی"></a><a href="#universe" data-t="فراسوی طلایی"></a><a href="#lab" data-t="امضای طلا"></a>
   <a href="#ai" data-t="هوش طلایی"></a><a href="#magic" data-t="ذهن‌خوانی"></a>
   <a href="#founder" data-t="بنیان‌گذار"></a><a href="#contact" data-t="تماس"></a>
 </nav>
@@ -900,18 +899,17 @@ body.chat-open #chatFab{transform:scale(0);opacity:0;pointer-events:none}
   </div>
 </section>
 
-<!-- ============ معمارِ طلایی ============ -->
 <section id="arch" class="sec">
   <div class="wrap">
     <div class="sec-head" data-reveal>
       <div><span class="sec-no">( ۰۳ )</span><h2 class="sec-title">معمارِ <em>طلایی</em></h2></div>
-      <p class="sec-sub">هوش مصنوعی طراح تِکا: ۷ سؤال، هزاران گزینه و یک طرحِ زنده و کامل — همین‌جا، همین حالا.</p>
+      <p class="sec-sub">هوش مصنوعی طراح تِکا: ۷ سؤال، صدها گزینه و یک طرحِ زنده و کامل — همین‌جا، همین حالا.</p>
     </div>
     <div class="arch-note" data-reveal>
       <strong>چرا این ابزار؟</strong>
       <p>این هوش مصنوعی فقط برای <strong>افزایش کیفیت ارائه خدمات</strong> و درک دقیق‌تر سلیقه‌ی شما طراحی شده است. خروجی‌اش یک طرح اولیه‌ی پیشنهادی است — و حتی <strong>یک صدم قدرت واقعی گروه تِکا هم نیست!</strong> نسخه‌ی نهایی را ما با وسواس و دست می‌سازیم.</p>
     </div>
-    <p class="arch-combo" data-reveal>تنوع بی‌نهایت: بیش از <b>۳۹٬۱۶۸٬۰۰۰</b> ترکیب ممکن — هیچ دو سایتی شبیه هم نمی‌شوند!</p>
+    <p class="arch-combo" data-reveal>تنوع بی‌نهایت: بیش از <b>۲۴۵٬۰۰۰٬۰۰۰</b> ترکیب ممکن — هیچ دو سایتی شبیه هم نمی‌شوند!</p>
     <div class="arch-card" data-reveal style="--d:.1s">
       <div id="archWizard">
         <div class="arch-prog"><i id="archProgBar"></i></div>
@@ -941,30 +939,31 @@ body.chat-open #chatFab{transform:scale(0);opacity:0;pointer-events:none}
   </div>
 </section>
 
-<!-- ============ موزه‌ی سه‌بعدی BMW ============ -->
-<section id="bmw" class="sec">
+<section id="universe" class="sec">
   <div class="wrap">
     <div class="sec-head" data-reveal>
-      <div><span class="sec-no">( ۰۴ )</span><h2 class="sec-title">موزه‌ی شبانه‌ی <em>BMW کلاسیک</em></h2></div>
-      <p class="sec-sub">سه اسطوره‌ی واقعی آلمان، با صدها قطعه‌ی سه‌بعدی و نورپردازی سینمایی — با موس بچرخانشان!</p>
+      <div><span class="sec-no">( ۰۴ )</span><h2 class="sec-title">فراسویِ <em>طلایی</em></h2></div>
+      <p class="sec-sub">۲۶٬۰۰۰ ذره‌ی نورانی که با یک کلیک، بین کهکشان، نشان تِکا، رشته‌ی DNA، سیاره‌ی حلقه‌دار و سحابی به پرواز درمی‌آیند — با موس بچرخانشان!</p>
     </div>
-    <div class="bmw-wrap">
-      <div class="bmw-copy" data-reveal>
-        <p>هر خودرو با پروفیل واقعی بدنه، جلوپنجره‌ی کلیویِ تیغه‌دار، چراغ‌های گرد با قاب کروم، سپر با اوررایدر، رینگ اسپوک‌دار، اگزوز دوقلو، آینه، دستگیره و صندلی داخل کابین ساخته شده — بدنه با رنگ متالیکِ کلیرکوت که زیر نور ریم‌لایت طلایی واقعاً می‌درخشد.</p>
-        <p class="bmw-hint">با موس بکش تا ماشین بچرخد؛ رها کنی، خودش روی سکو می‌چرخد و نور طلایی می‌گیرد!</p>
+    <div class="uni-wrap">
+      <div class="uni-copy" data-reveal>
+        <p>هر ذره، یک ستاره است. با هر انتخاب، کل جهانِ ذرات مسیر تازه‌ای به سمت شکل بعدی می‌گیرند — با چرخش گردابی، تغییر رنگ زنده و هزاران مسیر منحصربه‌فرد.</p>
+        <p class="uni-hint">با موس بکش تا جهان بچرخد؛ رها کنی، آرام می‌چرخد و نفس می‌کشد. شکل‌ها را عوض کن و تماشا کن!</p>
       </div>
-      <div class="bmw-stage" data-reveal style="--d:.1s">
-        <span class="bmw-tag ltr">TEKA · 3D SHOWROOM · REAL DETAIL</span>
-        <canvas id="bmwCanvas"></canvas>
-        <div class="bmw-fallback" id="bmwFallback">
-          موتور سه‌بعدی (Three.js) بارگذاری نشد — اینترنت را وصل کن و رفرش بزن تا موزه باز شود!
+      <div class="uni-stage" data-reveal style="--d:.1s">
+        <span class="uni-tag ltr">TEKA · PARTICLE UNIVERSE · 26,000 STARS</span>
+        <canvas id="uniCanvas"></canvas>
+        <div class="uni-fallback" id="uniFallback">
+          موتور سه‌بعدی (Three.js) بارگذاری نشد — اینترنت را وصل کن و رفرش بزن تا جهان روشن شود!
         </div>
-        <div class="bmw-models">
-          <button class="bmw-model on" data-c="m507" type="button">BMW 507 · ۱۹۵۶</button>
-          <button class="bmw-model" data-c="m2002" type="button">BMW 2002 · ۱۹۶۸</button>
-          <button class="bmw-model" data-c="e30" type="button">BMW E30 M3 · ۱۹۸۸</button>
+        <div class="uni-shapes">
+          <button class="uni-shape on" data-s="0" type="button">کهکشان</button>
+          <button class="uni-shape" data-s="1" type="button">نشان تِکا</button>
+          <button class="uni-shape" data-s="2" type="button">رشته‌ی DNA</button>
+          <button class="uni-shape" data-s="3" type="button">سیاره‌ی حلقه‌دار</button>
+          <button class="uni-shape" data-s="4" type="button">سحابی</button>
         </div>
-        <div class="bmw-cap" id="bmwCap"><b>BMW 507 — ۱۹۵۶:</b> افسانه‌ای که فقط ۲۵۲ عدد از آن ساخته شد؛ جلوپنجره‌ی کلیوی، سپرهای کروم و لاستیک‌های وایت‌وال — ماشین الویس پریسلی!</div>
+        <div class="uni-cap" id="uniCap"><b>کهکشان مارپیچی:</b> ۲۶ هزار ستاره در سه بازوی مارپیچی — طلایی در مرکز، آبی و بنفش در لبه‌ها؛ مثل کهکشان راه شیری!</div>
       </div>
     </div>
   </div>
@@ -1001,7 +1000,7 @@ body.chat-open #chatFab{transform:scale(0);opacity:0;pointer-events:none}
     <div class="neural-copy" data-reveal>
       <span class="sec-no">( ۰۶ )</span>
       <h2 class="sec-title">GOLDEN-CORE <em>v6</em></h2>
-      <p>مغز تِکا عامیانه‌فوله! غلط تایپی می‌فهمد، اسمت را برای همیشه یادش می‌ماند، از تو یاد می‌گیرد، ۵۰+ مبحث عمیق بلد است و «معمارِ طلایی» و «موزه‌ی BMW» را هم می‌شناسد!</p>
+      <p>مغز تِکا عامیانه‌فوله! غلط تایپی می‌فهمد، اسمت را برای همیشه یادش می‌ماند، از تو یاد می‌گیرد، ۵۰+ مبحث عمیق بلد است و «معمارِ طلایی» و «فراسوی طلایی» را هم می‌شناسد!</p>
       <p class="neural-hint">شبکه‌ی کنار دستت دارد «فکر» می‌کند؛ و صدای فارسی هم دارد — در چت، دکمه‌ی بلندگو را روشن کن!</p>
       <span class="kb-badge"><span class="dot"></span>خزانه‌ی دانش: <span id="kbCount">۰</span> مبحث · بدون اینترنت</span>
     </div>
@@ -1042,7 +1041,7 @@ body.chat-open #chatFab{transform:scale(0);opacity:0;pointer-events:none}
     <div data-reveal>
       <span class="sec-no">( ۰۸ )</span>
       <h2 class="sec-title">با <em>هوشِ تِکا</em> یه چایی بزن</h2>
-      <p style="color:var(--ink2);max-width:460px;margin-top:1.2rem">بپرس «سیاه‌چاله چیه؟»، بگو «معمار رو باز کن» تا طرح سایتت ساخته بشه، یا «BMW رو نشونم بده» تا موزه باز بشه!</p>
+      <p style="color:var(--ink2);max-width:460px;margin-top:1.2rem">بپرس «سیاه‌چاله چیه؟»، بگو «معمار رو باز کن» تا طرح سایتت ساخته بشه، یا «کهکشان رو نشونم بده» تا فراسوی طلایی باز بشه!</p>
       <button class="btn btn-fill btn-lg" id="openChat" style="margin-top:2rem"><span>بزن بریم حرف بزنیم</span><svg class="ic"><use href="#i-chat"/></svg></button>
     </div>
     <div class="assist-feats" data-reveal style="--d:.15s">
@@ -1171,7 +1170,7 @@ body.chat-open #chatFab{transform:scale(0);opacity:0;pointer-events:none}
         <p>استودیو توسعه‌ی وب و هوش مصنوعی؛ بنیان‌گذاری‌شده توسط محمد صادقی (۱۷ ساله) در ارومیه، سال ۱۴۰۵.</p>
       </div>
       <div class="foot-cols">
-        <div><h4>نقشه</h4><a href="#hero">خانه</a><a href="#services">خدمت‌ها</a><a href="#kof">کوفه‌خانه</a><a href="#arch">معمارِ طلایی</a><a href="#bmw">موزه BMW</a><a href="#lab">امضای طلا</a><a href="#ai">هوشِ طلایی</a><a href="#founder">بنیان‌گذار</a></div>
+        <div><h4>نقشه</h4><a href="#hero">خانه</a><a href="#services">خدمت‌ها</a><a href="#kof">کوفه‌خانه</a><a href="#arch">معمارِ طلایی</a><a href="#universe">فراسوی طلایی</a><a href="#lab">امضای طلا</a><a href="#ai">هوشِ طلایی</a><a href="#founder">بنیان‌گذار</a></div>
         <div><h4>تماس</h4><button class="copy-mail" type="button">mhmdsdqi87@gmail.com</button><a href="#contact">شروع پروژه</a><a href="#contact">ارومیه، ایران</a></div>
       </div>
     </div>
@@ -1197,7 +1196,7 @@ body.chat-open #chatFab{transform:scale(0);opacity:0;pointer-events:none}
   <div id="chatChips">
     <button data-q="سلام رفیق، حالت چطوره؟">سلام رفیق</button>
     <button data-q="معمار رو باز کن">معمار سایت</button>
-    <button data-q="ماشین‌های BMW رو نشونم بده">موزه BMW</button>
+    <button data-q="کهکشان رو نشونم بده">فراسوی طلایی</button>
     <button data-q="۲۵ کیلومتر به مایل">تبدیل یکا</button>
     <button data-q="بیشتر بگو">بیشتر بگو</button>
     <button data-q="برام دعا بخون">دعا بخون</button>
@@ -1513,7 +1512,7 @@ function onScroll(){
   }
   if(wm)wm.style.transform='rotate('+(y*0.03)+'deg)';
   var vh=window.innerHeight||800;
-  var ids=['hero','services','kof','arch','bmw','lab','ai','magic','founder','contact'];
+  var ids=['hero','services','kof','arch','universe','lab','ai','magic','founder','contact'];
   for(var s=0;s<ids.length;s++){
     var sec=document.getElementById(ids[s]);
     if(!sec)continue;
@@ -1956,155 +1955,355 @@ try{
 </script>
 
 <script>
-/* بلوک ۴٫۵: معمارِ طلایی v2 — ۳۹ میلیون ترکیب */
+/* بلوک ۴٫۵: معمارِ طلایی v3 — ۲۴۵ میلیون ترکیب (بازنویسی کامل ضدباگ) */
 (function(){
 var T=window.TEKA||{};
 function faNum(n){return T.faNum?T.faNum(n):String(n);}
-try{
-  var wizard=document.getElementById('archWizard'),resultBox=document.getElementById('archResult');
-  var qEl=document.getElementById('archQ'),optsEl=document.getElementById('archOpts');
-  var stepNo=document.getElementById('archStepNo'),progBar=document.getElementById('archProgBar');
-  var backBtn=document.getElementById('archBack'),randomBtn=document.getElementById('archRandom');
-  if(!wizard||!qEl||!optsEl)return;
+function hexA(hex,a){
+  var r=parseInt(hex.slice(1,3),16),g=parseInt(hex.slice(3,5),16),b=parseInt(hex.slice(5,7),16);
+  return 'rgba('+r+','+g+','+b+','+a+')';
+}
+var PALETTES=[
+  {n:'طلاییِ تِکا',m:'dark',bg:'#14100A',fg:'#FAF7EE',a:'#C9A24B',b:'#E9C876'},
+  {n:'آبی اقیانوس',m:'dark',bg:'#0B1E2D',fg:'#EAF6FF',a:'#1E88E5',b:'#64C7FF'},
+  {n:'سبز جنگل',m:'dark',bg:'#0E1F16',fg:'#EDF7F0',a:'#2E9E5B',b:'#7FD8A4'},
+  {n:'قرمز آتشین',m:'dark',bg:'#1A0E0E',fg:'#FFF0EE',a:'#E5484D',b:'#FF8A80'},
+  {n:'بنفش سلطنتی',m:'dark',bg:'#140F24',fg:'#F3EEFF',a:'#7C4DFF',b:'#B388FF'},
+  {n:'نارنجی غروب',m:'dark',bg:'#1C1206',fg:'#FFF4E8',a:'#F57C00',b:'#FFB74D'},
+  {n:'صورتی مدرن',m:'dark',bg:'#200E18',fg:'#FFEFF5',a:'#E91E63',b:'#FF80AB'},
+  {n:'فیروزه‌ای عمیق',m:'dark',bg:'#06201F',fg:'#E8FBF9',a:'#00BFA5',b:'#64D8CB'},
+  {n:'مونوکروم',m:'dark',bg:'#111111',fg:'#FAFAFA',a:'#BDBDBD',b:'#EDEDED'},
+  {n:'قهوه‌ای کافه',m:'dark',bg:'#1B120C',fg:'#F7EFE6',a:'#A1662F',b:'#D9A05B'},
+  {n:'یشمی تیره',m:'dark',bg:'#0A1F1A',fg:'#E8FFF6',a:'#10B981',b:'#6EE7B7'},
+  {n:'فولادی',m:'dark',bg:'#161B22',fg:'#E6EDF3',a:'#58A6FF',b:'#8EC7FF'},
+  {n:'استخوانی و طلا',m:'light',bg:'#FAF7EE',fg:'#17130C',a:'#8A6A1E',b:'#C9A24B'},
+  {n:'برفی آبی',m:'light',bg:'#F4F9FF',fg:'#0D2440',a:'#1565C0',b:'#42A5F5'},
+  {n:'نعنایی تازه',m:'light',bg:'#F1FBF6',fg:'#0C2B1E',a:'#00875A',b:'#36C48F'},
+  {n:'شکری گرم',m:'light',bg:'#FBF6EC',fg:'#2B1D0E',a:'#A66A1E',b:'#D69A3C'},
+  {n:'یاسی لطیف',m:'light',bg:'#F8F4FF',fg:'#241540',a:'#673AB7',b:'#9575CD'},
+  {n:'هلویی',m:'light',bg:'#FFF4ED',fg:'#3B1F12',a:'#EA580C',b:'#FB923C'},
+  {n:'لیمویی',m:'light',bg:'#FEFCE8',fg:'#3B320B',a:'#CA8A04',b:'#FACC15'},
+  {n:'ذغالی و قرمز',m:'dark',bg:'#141414',fg:'#F5F5F5',a:'#D32F2F',b:'#FF6659'}
+];
+var TYPES=[
+  {n:'فروشگاه آنلاین',b:'شاپ',t:'هر محصول، یک کلیک تا مشتری',s:'فروشگاهی که هم زیباست، هم می‌فروشد؛ از ویترین تا پرداخت، بی‌نقص.',cta:'شروع خرید',mq:['محصولات ویژه','تخفیف‌های شگفت‌انگیز','ارسال رایگان','ضمانت اصالت','پشتیبانی ۲۴/۷','پرداخت امن'],
+   f:[['ویترین هوشمند','محصولات با فیلتر و مرتب‌سازی پیشرفته، همیشه جلوی چشم مشتری.'],['سبد و پرداخت','فرایند خرید کوتاه و مطمئن؛ نرخ رهاکردن سبد به حداقل می‌رسد.'],['جست‌وجوی زنده','مشتری همان لحظه پیدا می‌کند؛ با پیشنهادهای هوشمند.'],['پنل مدیریت','موجودی، سفارش‌ها و آمار فروش، همه در یک نگاه.']]},
+  {n:'سایت شرکتی',b:'شرکت',t:'اعتماد، از اولین نگاه ساخته می‌شود',s:'معرفی حرفه‌ای خدمات، تیم و ارزش‌های شما برای مشتریان جدی.',cta:'درخواست مشاوره',mq:['تخصص و تجربه','تیم حرفه‌ای','راهکارهای متناسب','شفافیت کامل','تحویل به‌موقع','پشتیبانی واقعی'],
+   f:[['معرفی خدمات','هر خدمت با جزئیات دقیق و لحنی که اعتماد می‌سازد.'],['نمونه‌کارها','پروژه‌های شما در قابی درخشان و قابل لمس.'],['تیم ما','چهره‌های واقعی، متخصص‌های واقعی؛ انسان‌سازی برند.'],['فرم تماس هوشمند','هر درخواست مستقیم روی میز تیم فروش می‌نشیند.']]},
+  {n:'لندینگ محصول',b:'لندینگ',t:'یک محصول، یک هدف، یک کلیک',s:'صفحه‌ای مهندسی‌شده برای یک چیز: تبدیل بازدیدکننده به خریدار.',cta:'همین حالا بخر',mq:['عرضه‌ی محدود','تخفیف پرتاب','ضمانت بازگشت','ارسال فوری','رضایت تضمینی','به‌روزرسانی رایگان'],
+   f:[['قهرمانِ صفحه','محصول با مزیت اصلی در سه ثانیه‌ی اول.'],['ویژگی‌ها','هر قابلیت با یک هدف روشن: «چرا باید بخرم؟»'],['اثبات اجتماعی','نظرات واقعی، آمار واقعی، اعتماد واقعی.'],['دعوت به اقدام','دکمه‌هایی که چشم را دنبال می‌کنند و کلیک می‌گیرند.']]},
+  {n:'رستوران و کافه',b:'رستوران',t:'طعمی که فراموش نمی‌شود',s:'منوی دیجیتال اشتهاآور، رزرو آسان و مسیری که مشتری را سر میز می‌آورد.',cta:'رزرو میز',mq:['منوی فصلی','رزرو آنلاین','مواد اولیه‌ی تازه','فضای دنج','دسرهای ویژه','قهوه‌ی تخصصی'],
+   f:[['منوی کامل','هر غذا با عکس و توضیحی که دهان را آب می‌اندازد.'],['رزرو میز','سه کلیک تا میز رزرو‌شده؛ بدون تماس تلفنی.'],['داستان ما','از آشپزخانه تا سفره؛ روایتی که مشتری را عاشق می‌کند.'],['نقشه و ساعات','مشتری هیچ‌وقت گم نمی‌شود.']]},
+  {n:'نمونه‌کار (پورتفولیو)',b:'پورتفولیو',t:'کارهای من، خودشان حرف می‌زنند',s:'نمایش آثار شما در قابی درخشان که مشتری را مجبور به تماس می‌کند.',cta:'دیدن پروژه‌ها',mq:['طراحی گرافیک','توسعه وب','عکاسی','تدوین ویدیو','هویت بصری','انیمیشن'],
+   f:[['گالری سینمایی','آثار با تصاویر بزرگ و ترنزیشن‌های نرم دیده می‌شوند.'],['مطالعه‌ی موردی','هر پروژه با داستان، چالش و راه‌حلش روایت می‌شود.'],['درباره‌ی من','سوگرلیف شخصی که مشتری را به همکار تبدیل می‌کند.'],['راه‌های تماس','ایمیل، شبکه‌های اجتماعی و فرم؛ همه‌جا حاضرم.']]},
+  {n:'خبری و مجله',b:'مجله',t:'اخبار، تازه و داغ',s:'انتشار محتوا با خوانایی بی‌نقص، دسته‌بندی هوشمند و جست‌وجوی سریع.',cta:'آخرین مطالب',mq:['تحلیل‌های ویژه','گزارش اختصاصی','مصاحبه‌های انحصاری','اخبار فوری','ویدئوها','پادکست'],
+   f:[['صفحه‌ی اول پویا','مطالب داغ و مرتبط، همیشه جلوی چشم خواننده.'],['دسته‌بندی هوشمند','هر موضوع، خانه‌ی خودش را دارد.'],['خوانایی طلایی','تایپوگرافی‌ای که چشم را خسته نمی‌کند.'],['خبرنامه','خواننده‌ها برمی‌گردند، چون حافظ‌شان هستیم.']]},
+  {n:'آموزشی و دوره',b:'آکادمی',t:'یادگیری، لذت‌بخش و مؤثر',s:'دوره‌ها و محتوای آموزشی با ساختاری که دانش‌آموز را تا انتها نگه می‌دارد.',cta:'ثبت‌نام دوره',mq:['دوره‌های ویدیویی','گواهی پایان','مربیان برتر','پروژه‌ی عملی','پشتیبانی مستقیم','دسترسی مادام‌العمر'],
+   f:[['فهرست دوره‌ها','هر دوره با سرفصل، مدت و پیش‌نیاز شفاف.'],['پنل دانشجو','پیشرفت، تکالیف و گواهی‌ها، یک‌جا.'],['مدرس‌ها','چهره‌ی واقعی مدرس‌ها، اعتماد واقعی.'],['نظرات فارغ‌التحصیلان','قصه‌ی موفقیت‌ها، بهترین تبلیغ.']]},
+  {n:'کلینیک و پزشکی',b:'کلینیک',t:'سلامت شما، اولویت ما',s:'نوبت‌دهی آنلاین و معرفی تخصص‌ها با ظاهری آرام و قابل‌اعتماد.',cta:'دریافت نوبت',mq:['نوبت‌دهی آنلاین','پزشکان متخصص','تجهیزات مدرن','رعایت حریم خصوصی','پذیرش اورژانس','مشاوره‌ی تلفنی'],
+   f:[['تخصص‌ها','هر بخش با توضیح صادقانه و بدون اغراق پزشکی.'],['پزشکان','رزومه و ساعات حضور؛ شفاف مثل آب.'],['نوبت‌دهی','انتخاب روز و ساعت، بدون صف و معطلی.'],['پرسش‌های رایج','جواب سؤال‌ها قبل از اینکه بپرسند.']]},
+  {n:'املاک',b:'املاک',t:'خانه‌ی رویایی‌تان اینجاست',s:'جست‌وجوی ملک با فیلترهای دقیق و تصاویری که حس خانه بودن می‌دهند.',cta:'مشاهده‌ی املاک',mq:['آپارتمان','ویلای شخصی','زمین تجاری','پیش‌فروش','مشاوره‌ی رایگان','مدارک قانونی'],
+   f:[['جست‌وجوی پیشرفته','محله، متراژ، قیمت؛ مشتری دقیقاً همان را پیدا می‌کند که می‌خواهد.'],['صفحه‌ی ملک','گالری، نقشه، مشخصات کامل و فرم بازدید.'],['مشاوره‌ی تخصصی','کارشناس واقعی، پاسخ واقعی، قرارداد واقعی.'],['اعتمادسازی','مدارک و شفافیت قانونی، اول از همه.']]},
+  {n:'باشگاه ورزشی',b:'باشگاه',t:'نسخه‌ی قوی‌تر خودت باش',s:'برنامه‌ها و کلاس‌ها با انرژی‌ای که مشتری را از مبل بلند می‌کند.',cta:'عضویت',mq:['کلاس‌های گروهی','مربیان حرفه‌ای','برنامه‌ی تغذیه','باشگاه بانوان','دوره‌های چربی‌سوزی','اولین جلسه رایگان'],
+   f:[['برنامه‌ها','هر هدف، یک مسیر روشن: عضله‌سازی، لاغری، استقامت.'],['کلاس‌ها','جدول زمانی زنده و ظرفیت باقی‌مانده.'],['مربیان','عکس، رزومه و سبک هر مربی؛ انتخاب با خود مشتری.'],['باشگاه ما','تور مجازی از فضاهای ورزشی؛ مشتری قبل از آمدن عاشق می‌شود.']]},
+  {n:'آژانس مسافرتی',b:'سفر',t:'دنیا را باید دید',s:'تورها و بلیت‌ها با تصاویری که چمدان بستن را وسوسه می‌کنند.',cta:'رزرو تور',mq:['تورهای خارجی','تورهای داخلی','بلیت چارتر','ویزا و بیمه','تور لحظه‌آخری','سفرهای لاکچری'],
+   f:[['تورها','هر تور با برنامه روز‌به‌روز، قیمت شفاف و عکس‌های واقعی.'],['رزرو آسان','چند کلیک تا صندلی کنار پنجره‌ی هواپیما.'],['مقاصد','راهنمای هر شهر؛ مشتری قبل از سفر عاشق می‌شود.'],['پشتیبانی سفر','شماره‌ی اضطراری که همیشه جواب می‌دهد.']]},
+  {n:'آتلیه عکاسی',b:'آتلیه',t:'لحظه‌ها را برای همیشه نگه دار',s:'نمونه‌کارها با کیفیتی که مشتری را سر جلسه‌ی عکاسی می‌نشاند.',cta:'رزرو جلسه',mq:['عکاسی عروسی','پرتره حرفه‌ای','عکاسی محصول','آتلیه کودک','عکاسی صنعتی','چاپ و قاب'],
+   f:[['نمونه‌کارها','آلبوم‌های موضوعی با کیفیت چاپ واقعی.'],['پکیج‌ها','هر پکیج با تعداد عکس، زمان و قیمت شفاف.'],['رزرو جلسه','تقویم زنده و پیش‌پرداخت آنلاین.'],['داستان پشت لنز','سبک و فلسفه‌ی عکاس؛ تمایز واقعی.']]}
+];
+var ANIMS=[{n:'بدون انیمیشن',v:'none'},{n:'ملایم و آرام',v:'soft'},{n:'متعادل و حرفه‌ای',v:'mid'},{n:'پویا و پرانرژی',v:'full'},{n:'سینمایی',v:'cine'}];
+var STYLES=[{n:'مینیمال',v:'min'},{n:'لوکس',v:'lux'},{n:'هنری و خلاق',v:'art'},{n:'تکنولوژیک',v:'tech'},{n:'کلاسیک',v:'cls'},{n:'خیابانی و جسور',v:'bold'},{n:'شیشه‌ای (گلس)',v:'glass'},{n:'رترو',v:'retro'}];
+var FONTS=[{n:'گرد و دوستانه',v:'round'},{n:'رسمی و شارپ',v:'sharp'},{n:'هنری و کشیده',v:'art'},{n:'نازک و لوکس',v:'thin'}];
+var LAYOUTS=[{n:'کلاسیک مرکزچین',v:'center'},{n:'مدرن چپ‌چین',v:'left'},{n:'شبکه‌ای جسور',v:'grid'},{n:'اسپلیت دو‌ستونه',v:'split'},{n:'سینمایی تمام‌عرض',v:'wide'}];
+var EXTRAS=[{n:'چت آنلاین',v:'chat'},{n:'فرم تماس',v:'form'},{n:'گالری تصاویر',v:'gallery'},{n:'نظرات مشتریان',v:'reviews'},{n:'شمارنده‌ی آمار',v:'stats'},{n:'خبرنامه',v:'news'},{n:'سوالات متداول',v:'faq'},{n:'جدول قیمت',v:'pricing'},{n:'نوار شریکان',v:'sponsors'},{n:'دکمه‌ی تماس شناور',v:'callfab'}];
+var STEPS=[
+  {q:'چه نوع سایتی می‌خواهی بسازی؟',key:'type',count:TYPES.length,sw:false},
+  {q:'کدام <em>رنگ‌بندی</em> به دلت نشسته؟',key:'palette',count:PALETTES.length,sw:true},
+  {q:'چقدر <em>انیمیشن</em> دوست داری؟',key:'anim',count:ANIMS.length,sw:false},
+  {q:'سبک و <em>حس</em> سایت چطور باشد؟',key:'style',count:STYLES.length,sw:false},
+  {q:'حال‌وهوای <em>فونت‌ها</em> چی باشد؟',key:'font',count:FONTS.length,sw:false},
+  {q:'<em>چیدمان</em> صفحه چگونه باشد؟',key:'layout',count:LAYOUTS.length,sw:false},
+  {q:'کدام <em>امکانات اضافه</em> را می‌خواهی؟ (چندتا هم می‌شود)',key:'extras',count:EXTRAS.length,sw:false,multi:true}
+];
+var state={type:0,palette:0,anim:2,style:0,font:0,layout:0,extras:[1,3]};
+var step=0;
 
-  var PALETTES=[
-    {n:'طلاییِ تِکا',m:'dark',bg:'#14100A',fg:'#FAF7EE',a:'#C9A24B',b:'#E9C876'},
-    {n:'آبی اقیانوس',m:'dark',bg:'#0B1E2D',fg:'#EAF6FF',a:'#1E88E5',b:'#64C7FF'},
-    {n:'سبز جنگل',m:'dark',bg:'#0E1F16',fg:'#EDF7F0',a:'#2E9E5B',b:'#7FD8A4'},
-    {n:'قرمز آتشین',m:'dark',bg:'#1A0E0E',fg:'#FFF0EE',a:'#E5484D',b:'#FF8A80'},
-    {n:'بنفش سلطنتی',m:'dark',bg:'#140F24',fg:'#F3EEFF',a:'#7C4DFF',b:'#B388FF'},
-    {n:'نارنجی غروب',m:'dark',bg:'#1C1206',fg:'#FFF4E8',a:'#F57C00',b:'#FFB74D'},
-    {n:'صورتی مدرن',m:'dark',bg:'#200E18',fg:'#FFEFF5',a:'#E91E63',b:'#FF80AB'},
-    {n:'فیروزه‌ای عمیق',m:'dark',bg:'#06201F',fg:'#E8FBF9',a:'#00BFA5',b:'#64D8CB'},
-    {n:'مونوکروم',m:'dark',bg:'#111111',fg:'#FAFAFA',a:'#BDBDBD',b:'#EDEDED'},
-    {n:'قهوه‌ای کافه',m:'dark',bg:'#1B120C',fg:'#F7EFE6',a:'#A1662F',b:'#D9A05B'},
-    {n:'استخوانی و طلا',m:'light',bg:'#FAF7EE',fg:'#17130C',a:'#8A6A1E',b:'#C9A24B'},
-    {n:'برفی آبی',m:'light',bg:'#F4F9FF',fg:'#0D2440',a:'#1565C0',b:'#42A5F5'},
-    {n:'نعنایی تازه',m:'light',bg:'#F1FBF6',fg:'#0C2B1E',a:'#00875A',b:'#36C48F'},
-    {n:'شکری گرم',m:'light',bg:'#FBF6EC',fg:'#2B1D0E',a:'#A66A1E',b:'#D69A3C'},
-    {n:'یاسی لطیف',m:'light',bg:'#F8F4FF',fg:'#241540',a:'#673AB7',b:'#9575CD'},
-    {n:'ذغالی و قرمز',m:'dark',bg:'#141414',fg:'#F5F5F5',a:'#D32F2F',b:'#FF6659'}
-  ];
-  var TYPES=[
-    {n:'فروشگاه آنلاین',b:'شاپ',t:'هر محصول، یک کلیک تا مشتری',s:'فروشگاهی که هم زیباست، هم می‌فروشد؛ از ویترین تا پرداخت، بی‌نقص.',cta:'شروع خرید',mq:['محصولات ویژه','تخفیف‌های شگفت‌انگیز','ارسال رایگان','ضمانت اصالت','پشتیبانی ۲۴/۷','پرداخت امن'],
-     f:[['ویترین هوشمند','محصولات با فیلتر و مرتب‌سازی پیشرفته، همیشه جلوی چشم مشتری.'],['سبد و پرداخت','فرایند خرید کوتاه و مطمئن؛ نرخ رهاکردن سبد به حداقل می‌رسد.'],['جست‌وجوی زنده','مشتری همان لحظه پیدا می‌کند؛ با پیشنهادهای هوشمند.'],['پنل مدیریت','موجودی، سفارش‌ها و آمار فروش، همه در یک نگاه.']]},
-    {n:'سایت شرکتی',b:'شرکت',t:'اعتماد، از اولین نگاه ساخته می‌شود',s:'معرفی حرفه‌ای خدمات، تیم و ارزش‌های شما برای مشتریان جدی.',cta:'درخواست مشاوره',mq:['تخصص و تجربه','تیم حرفه‌ای','راهکارهای متناسب','شفافیت کامل','تحویل به‌موقع','پشتیبانی واقعی'],
-     f:[['معرفی خدمات','هر خدمت با جزئیات دقیق و لحنی که اعتماد می‌سازد.'],['نمونه‌کارها','پروژه‌های شما در قابی درخشان و قابل لمس.'],['تیم ما','چهره‌های واقعی، متخصص‌های واقعی؛ انسان‌سازی برند.'],['فرم تماس هوشمند','هر درخواست مستقیم روی میز تیم فروش می‌نشیند.']]},
-    {n:'لندینگ محصول',b:'لندینگ',t:'یک محصول، یک هدف، یک کلیک',s:'صفحه‌ای مهندسی‌شده برای یک چیز: تبدیل بازدیدکننده به خریدار.',cta:'همین حالا بخر',mq:['عرضه‌ی محدود','تخفیف پرتاب','ضمانت بازگشت','ارسال فوری','رضایت تضمینی','به‌روزرسانی رایگان'],
-     f:[['قهرمانِ صفحه','محصول با تصویر بزرگ و مزیت اصلی در سه ثانیه‌ی اول.'],['ویژگی‌ها','هر قابلیت با یک هدف روشن: «چرا باید بخرم؟»'],['اثبات اجتماعی','نظرات واقعی، آمار واقعی، اعتماد واقعی.'],['دعوت به اقدام','دکمه‌هایی که چشم را دنبال می‌کنند و کلیک می‌گیرند.']]},
-    {n:'رستوران و کافه',b:'رستوران',t:'طعمی که فراموش نمی‌شود',s:'منوی دیجیتال اشتهاآور، رزرو آسان و مسیری که مشتری را سر میز می‌آورد.',cta:'رزرو میز',mq:['منوی فصلی','رزرو آنلاین','مواد اولیه‌ی تازه','فضای دنج','دسرهای ویژه','قهوه‌ی تخصصی'],
-     f:[['منوی کامل','هر غذا با عکس و توضیحی که دهان را آب می‌اندازد.'],['رزرو میز','سه کلیک تا میز رزرو‌شده؛ بدون تماس تلفنی.'],['داستان ما','از آشپزخانه تا سفره؛ روایتی که مشتری را عاشق می‌کند.'],['نقشه و ساعات','مشتری هیچ‌وقت گم نمی‌شود.']]},
-    {n:'نمونه‌کار (پورتفولیو)',b:'پورتفولیو',t:'کارهای من، خودشان حرف می‌زنند',s:'نمایش آثار شما در قابی درخشان که مشتری را مجبور به تماس می‌کند.',cta:'دیدن پروژه‌ها',mq:['طراحی گرافیک','توسعه وب','عکاسی','تدوین ویدیو','هویت بصری','انیمیشن'],
-     f:[['گالری سینمایی','آثار با تصاویر بزرگ و ترنزیشن‌های نرم دیده می‌شوند.'],['مطالعه‌ی موردی','هر پروژه با داستان، چالش و راه‌حلش روایت می‌شود.'],['درباره‌ی من','سوگرلیف شخصی که مشتری را به همکار تبدیل می‌کند.'],['راه‌های تماس','ایمیل، شبکه‌های اجتماعی و فرم؛ همه‌جا حاضرم.']]},
-    {n:'خبری و مجله',b:'مجله',t:'اخبار، تازه و داغ',s:'انتشار محتوا با خوانایی بی‌نقص، دسته‌بندی هوشمند و جست‌وجوی سریع.',cta:'آخرین مطالب',mq:['تحلیل‌های ویژه','گزارش اختصاصی','مصاحبه‌های انحصاری','اخبار فوری','ویدئوها','پادکست'],
-     f:[['صفحه‌ی اول پویا','مطالب داغ و مرتبط، همیشه جلوی چشم خواننده.'],['دسته‌بندی هوشمند','هر موضوع، خانه‌ی خودش را دارد.'],['خوانایی طلایی','تایپوگرافی‌ای که چشم را خسته نمی‌کند.'],['خبرنامه','خواننده‌ها برمی‌گردند، چون حافظ‌شان هستیم.']]},
-    {n:'آموزشی و دوره',b:'آکادمی',t:'یادگیری، لذت‌بخش و مؤثر',s:'دوره‌ها و محتوای آموزشی با ساختاری که دانش‌آموز را تا انتها نگه می‌دارد.',cta:'ثبت‌نام دوره',mq:['دوره‌های ویدیویی','گواهی پایان','مربیان برتر','پروژه‌ی عملی','پشتیبانی مستقیم','دسترسی مادام‌العمر'],
-     f:[['فهرست دوره‌ها','هر دوره با سرفصل، مدت و پیش‌نیاز شفاف.'],['پنل دانشجو','پیشرفت، تکالیف و گواهی‌ها، یک‌جا.'],['مدرس‌ها','چهره‌ی واقعی مدرس‌ها، اعتماد واقعی.'],['نظرات فارغ‌التحصیلان','قصه‌ی موفقیت‌ها، بهترین تبلیغ.']]},
-    {n:'کلینیک و پزشکی',b:'کلینیک',t:'سلامت شما، اولویت ما',s:'نوبت‌دهی آنلاین و معرفی تخصص‌ها با ظاهری آرام و قابل‌اعتماد.',cta:'دریافت نوبت',mq:['نوبت‌دهی آنلاین','پزشکان متخصص','تجهیزات مدرن','رعایت حریم خصوصی','پذیرش اورژانس','مشاوره‌ی تلفنی'],
-     f:[['تخصص‌ها','هر بخش با توضیح صادقانه و بدون اغراق پزشکی.'],['پزشکان','رزومه و ساعات حضور؛ شفاف مثل آب.'],['نوبت‌دهی','انتخاب روز و ساعت، بدون صف و معطلی.'],['پرسش‌های رایج','جواب سؤال‌ها قبل از اینکه بپرسند.']]},
-    {n:'املاک',b:'املاک',t:'خانه‌ی رویایی‌تان اینجاست',s:'جست‌وجوی ملک با فیلترهای دقیق و تصاویری که حس خانه بودن می‌دهند.',cta:'مشاهده‌ی املاک',mq:['آپارتمان','ویلای شخصی','زمین تجاری','پیش‌فروش','مشاوره‌ی رایگان','مدارک قانونی'],
-     f:[['جست‌وجوی پیشرفته','محله، متراژ، قیمت؛ مشتری دقیقاً همان را پیدا می‌کند که می‌خواهد.'],['صفحه‌ی ملک','گالری، نقشه، مشخصات کامل و فرم بازدید.'],['مشاوره‌ی تخصصی','کارشناس واقعی، پاسخ واقعی، قرارداد واقعی.'],['اعتمادسازی','مدارک و شفافیت قانونی، اول از همه.']]},
-    {n:'باشگاه ورزشی',b:'باشگاه',t:'نسخه‌ی قوی‌تر خودت باش',s:'برنامه‌ها و کلاس‌ها با انرژی‌ای که مشتری را از مبل بلند می‌کند.',cta:'عضویت',mq:['کلاس‌های گروهی','مربیان حرفه‌ای','برنامه‌ی تغذیه','باشگاه بانوان','دوره‌های چربی‌سوزی','اولین جلسه رایگان'],
-     f:[['برنامه‌ها','هر هدف، یک مسیر روشن: عضله‌سازی، لاغری، استقامت.'],['کلاس‌ها','جدول زمانی زنده و ظرفیت باقی‌مانده.'],['مربیان','عکس، رزومه و سبک هر مربی؛ انتخاب با خود مشتری.'],['باشگاه ما','تور مجازی از فضاهای ورزشی؛ مشتری قبل از آمدن عاشق می‌شود.']]},
-    {n:'آژانس مسافرتی',b:'سفر',t:'دنیا را باید دید',s:'تورها و بلیت‌ها با تصاویری که چمدان بستن را وسوسه می‌کنند.',cta:'رزرو تور',mq:['تورهای خارجی','تورهای داخلی','بلیت چارتر','ویزا و بیمه','تور لحظه‌آخری','سفرهای لاکچری'],
-     f:[['تورها','هر تور با برنامه روز‌به‌روز، قیمت شفاف و عکس‌های واقعی.'],['رزرو آسان','چند کلیک تا صندلی کنار پنجره‌ی هواپیما.'],['مقاصد','راهنمای هر شهر؛ مشتری قبل از سفر عاشق می‌شود.'],['پشتیبانی سفر','شماره‌ی اضطراری که همیشه جواب می‌دهد.']]},
-    {n:'آتلیه عکاسی',b:'آتلیه',t:'لحظه‌ها را برای همیشه نگه دار',s:'نمونه‌کارها با کیفیتی که مشتری را سر جلسه‌ی عکاسی می‌نشاند.',cta:'رزرو جلسه',mq:['عکاسی عروسی','پرتره حرفه‌ای','عکاسی محصول','آتلیه کودک','عکاسی صنعتی','چاپ و قاب'],
-     f:[['نمونه‌کارها','آلبوم‌های موضوعی با کیفیت چاپ واقعی.'],['پکیج‌ها','هر پکیج با تعداد عکس، زمان و قیمت شفاف.'],['رزرو جلسه','تقویم زنده و پیش‌پرداخت آنلاین.'],['داستان پشت لنز','سبک و فلسفه‌ی عکاس؛ تمایز واقعی.']]}
-  ];
-  var ANIMS=[{n:'بدون انیمیشن',v:'none'},{n:'ملایم و آرام',v:'soft'},{n:'متعادل و حرفه‌ای',v:'mid'},{n:'پویا و پرانرژی',v:'full'},{n:'سینمایی',v:'cine'}];
-  var STYLES=[{n:'مینیمال',v:'min'},{n:'لوکس',v:'lux'},{n:'هنری و خلاق',v:'art'},{n:'تکنولوژیک',v:'tech'},{n:'کلاسیک',v:'cls'},{n:'خیابانی و جسور',v:'bold'},{n:'شیشه‌ای (گلس)',v:'glass'},{n:'رترو',v:'retro'}];
-  var FONTS=[{n:'گرد و دوستانه',v:'round'},{n:'رسمی و شارپ',v:'sharp'},{n:'هنری و کشیده',v:'art'},{n:'نازک و لوکس',v:'thin'}];
-  var LAYOUTS=[{n:'کلاسیک مرکزچین',v:'center'},{n:'مدرن چپ‌چین',v:'left'},{n:'شبکه‌ای جسور',v:'grid'},{n:'اسپلیت دو‌ستونه',v:'split'},{n:'سینمایی تمام‌عرض',v:'wide'}];
-  var EXTRAS=[{n:'چت آنلاین',v:'chat'},{n:'فرم تماس',v:'form'},{n:'گالری تصاویر',v:'gallery'},{n:'نظرات مشتریان',v:'reviews'},{n:'شمارنده‌ی آمار',v:'stats'},{n:'خبرنامه',v:'news'},{n:'سوالات متداول',v:'faq'},{n:'جدول قیمت',v:'pricing'}];
-  var STEPS=[
-    {q:'چه نوع سایتی می‌خواهی بسازی؟',key:'type',count:TYPES.length,sw:false},
-    {q:'کدام <em>رنگ‌بندی</em> به دلت نشسته؟',key:'palette',count:PALETTES.length,sw:true},
-    {q:'چقدر <em>انیمیشن</em> دوست داری؟',key:'anim',count:ANIMS.length,sw:false},
-    {q:'سبک و <em>حس</em> سایت چطور باشد؟',key:'style',count:STYLES.length,sw:false},
-    {q:'حال‌وهوای <em>فونت‌ها</em> چی باشد؟',key:'font',count:FONTS.length,sw:false},
-    {q:'<em>چیدمان</em> صفحه چگونه باشد؟',key:'layout',count:LAYOUTS.length,sw:false},
-    {q:'کدام <em>امکانات اضافه</em> را می‌خواهی؟ (چندتا هم می‌شود)',key:'extras',count:EXTRAS.length,sw:false,multi:true}
-  ];
-  var state={type:0,palette:0,anim:2,style:0,font:0,layout:0,extras:[1,3]};
-  var step=0;
-  function renderStep(){
-    var s=STEPS[step];
-    stepNo.textContent='سؤال '+faNum(step+1)+' از '+faNum(STEPS.length);
-    progBar.style.transform='scaleX('+(step/STEPS.length)+')';
-    qEl.innerHTML=s.q;
-    optsEl.innerHTML='';
-    var sel=(s.multi)?state[s.key].slice():[state[s.key]];
-    for(var i=0;i<s.count;i++){
-      (function(i){
-        var b=document.createElement('button');
-        b.type='button';
-        b.className='arch-opt'+(sel.indexOf(i)>=0?' on':'');
-        var inner='';
-        if(s.sw){
-          var p=PALETTES[i];
-          inner+='<span class="sw"><i style="background:'+p.a+'"></i><i style="background:'+p.b+'"></i><i style="background:'+(p.m==='light'?'#FAF7EE':p.bg)+'"></i></span>';
+function optLabel(key,i){
+  if(key==='type')return TYPES[i].n;
+  if(key==='palette')return PALETTES[i].n;
+  if(key==='anim')return ANIMS[i].n;
+  if(key==='style')return STYLES[i].n;
+  if(key==='font')return FONTS[i].n;
+  if(key==='layout')return LAYOUTS[i].n;
+  return EXTRAS[i].n;
+}
+
+function renderStep(){
+  var s=STEPS[step];
+  document.getElementById('archStepNo').textContent='سؤال '+faNum(step+1)+' از '+faNum(STEPS.length);
+  document.getElementById('archProgBar').style.transform='scaleX('+(step/STEPS.length)+')';
+  qEl.innerHTML=s.q;
+  optsEl.innerHTML='';
+  var sel=(s.multi)?state[s.key].slice():[state[s.key]];
+  for(var i=0;i<s.count;i++){
+    (function(i){
+      var b=document.createElement('button');
+      b.type='button';
+      b.className='arch-opt'+(sel.indexOf(i)>=0?' on':'');
+      var inner='';
+      if(s.sw){
+        var p=PALETTES[i];
+        inner+='<span class="sw"><i style="background:'+p.a+'"></i><i style="background:'+p.b+'"></i><i style="background:'+(p.m==='light'?'#FAF7EE':p.bg)+'"></i></span>';
+      }
+      inner+='<span>'+optLabel(s.key,i)+'</span>';
+      b.innerHTML=inner;
+      b.addEventListener('click',function(){
+        if(s.multi){
+          var idx=state[s.key].indexOf(i);
+          if(idx>=0){state[s.key].splice(idx,1);}
+          else{state[s.key].push(i);}
+          b.classList.toggle('on');
+        }else{
+          state[s.key]=i;
+          var all=optsEl.querySelectorAll('.arch-opt');
+          for(var x=0;x<all.length;x++){all[x].classList.remove('on');}
+          b.classList.add('on');
+          setTimeout(next,260);
         }
-        inner+='<span>'+((s.key==='type')?TYPES[i].n:(s.key==='palette')?PALETTES[i].n:(s.key==='anim')?ANIMS[i].n:(s.key==='style')?STYLES[i].n:(s.key==='font')?FONTS[i].n:(s.key==='layout')?LAYOUTS[i].n:EXTRAS[i].n)+'</span>';
-        b.innerHTML=inner;
-        b.addEventListener('click',function(){
-          if(s.multi){
-            var idx=state[s.key].indexOf(i);
-            if(idx>=0)state[s.key].splice(idx,1);
-            else state[s.key].push(i);
-            b.classList.toggle('on');
-          }else{
-            state[s.key]=i;
-            var all=optsEl.querySelectorAll('.arch-opt');
-            for(var x=0;x<all.length;x++)all[x].classList.remove('on');
-            b.classList.add('on');
-            setTimeout(function(){next();},260);
-          }
-          T.SFX.click();
-        });
-        optsEl.appendChild(b);
-      })(i);
+        T.SFX.click();
+      });
+      optsEl.appendChild(b);
+    })(i);
+  }
+  if(s.multi){
+    var go=document.createElement('button');
+    go.type='button';
+    go.className='arch-opt';
+    go.style.gridColumn='1/-1';
+    go.style.background='var(--gold)';
+    go.style.color='var(--black)';
+    go.style.fontWeight='800';
+    go.style.fontSize='1rem';
+    go.textContent='بساز، معمار!';
+    go.addEventListener('click',function(){finish();});
+    optsEl.appendChild(go);
+  }
+  backBtn.style.visibility=(step===0)?'hidden':'visible';
+}
+function next(){
+  if(step<STEPS.length-1){step++;renderStep();}
+  else{finish();}
+}
+function finish(){
+  var code=genCode(state);
+  var frame=document.getElementById('archFrame');
+  frame.setAttribute('srcdoc',code);
+  var pal=PALETTES[state.palette],ty=TYPES[state.type];
+  var sw=document.getElementById('arSwatches');
+  sw.innerHTML='<span style="background:'+pal.bg+'"></span><span style="background:'+pal.a+'"></span><span style="background:'+pal.b+'"></span>';
+  var t=document.getElementById('arTitle');
+  t.textContent='طرح «'+ty.n+'» با پالت «'+pal.n+'»';
+  var meta=document.getElementById('arMeta');
+  var exNames=[];
+  var xi;
+  for(xi=0;xi<state.extras.length;xi++){exNames.push(EXTRAS[state.extras[xi]].n);}
+  meta.innerHTML='<span>'+ty.n+'</span><span>'+pal.n+'</span><span>'+ANIMS[state.anim].n+'</span><span>'+STYLES[state.style].n+'</span>'+
+    (exNames.length?'<span>+ '+exNames.join('، ')+'</span>':'');
+  wizard.style.display='none';
+  resultBox.classList.add('show');
+  window.__archCode=code;
+  T.SFX.success();
+  T.toast('طرح طلایی‌ات آماده شد!');
+  if(T.FX){T.FX.burst(window.innerWidth/2,window.innerHeight/2,60);}
+}
+function genCode(st){
+  var pal=PALETTES[st.palette];
+  var ty=TYPES[st.type];
+  var an=ANIMS[st.anim].v;
+  var sty=STYLES[st.style].v;
+  var fo=FONTS[st.font].v;
+  var lay=LAYOUTS[st.layout].v;
+  var light=(pal.m==='light');
+  var radius=({min:'8px',lux:'3px',art:'30px',tech:'2px',cls:'10px',bold:'16px',glass:'22px',retro:'26px'})[sty];
+  var cardBg=light?'#FFFFFF':'rgba(255,255,255,.05)';
+  var cardBd=light?'rgba(0,0,0,.09)':hexA(pal.a,0.3);
+  var shadow=light?'0 14px 40px rgba(0,0,0,.08)':'0 14px 40px rgba(0,0,0,.35)';
+  var shadowH=light?'0 22px 60px rgba(0,0,0,.14)':'0 22px 60px rgba(0,0,0,.5)';
+  var secAlt=light?'rgba(0,0,0,.03)':'rgba(255,255,255,.03)';
+  var fw=({round:'700',sharp:'800',art:'800',thin:'600'})[fo];
+  var ls=({round:'0',sharp:'.02em',art:'.04em',thin:'.01em'})[fo];
+  var fontFam="'Vazirmatn',Tahoma,sans-serif";
+  var navBg=hexA(pal.bg,0.82);
+  var animCSS='';
+  var bodyDecor='';
+  var heroDecor='';
+  if(an==='soft'){
+    animCSS='@keyframes rv{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:none}}[data-rv]{opacity:0}[data-rv].rv{animation:rv .8s var(--e) both}';
+  }else if(an==='mid'){
+    animCSS='@keyframes rv{from{opacity:0;transform:translateY(24px)}to{opacity:1;transform:none}}[data-rv]{opacity:0}[data-rv].rv{animation:rv .85s var(--e) both}.card{transition:transform .35s var(--e),box-shadow .35s}.card:hover{transform:translateY(-6px);box-shadow:'+shadowH+'}';
+  }else if(an==='full'||an==='cine'){
+    animCSS='@keyframes rv{from{opacity:0;transform:translateY(30px) scale(.97)}to{opacity:1;transform:none}}[data-rv]{opacity:0}[data-rv].rv{animation:rv .8s var(--e) both}'+
+      '@keyframes fl{0%,100%{transform:translateY(0) rotate(0)}50%{transform:translateY(-20px) rotate(6deg)}}'+
+      '.blob{position:absolute;border-radius:50%;filter:blur(70px);opacity:'+(light?0.22:0.28)+';animation:fl 7s ease-in-out infinite;pointer-events:none}'+
+      '.card{transition:transform .35s var(--e),box-shadow .35s}.card:hover{transform:translateY(-8px) scale(1.02);box-shadow:'+shadowH+'}';
+    heroDecor='<div class="blob" style="width:260px;height:260px;background:'+pal.a+';top:-70px;left:-50px"></div>'+
+      '<div class="blob" style="width:200px;height:200px;background:'+pal.b+';bottom:40px;right:-40px;animation-delay:2s"></div>'+
+      '<div class="blob" style="width:150px;height:150px;background:'+pal.b+';top:45%;left:12%;animation-delay:4s;opacity:'+(light?0.14:0.18)+'"></div>';
+    if(an==='cine'){
+      bodyDecor='<canvas id="pc" style="position:fixed;inset:0;z-index:0;pointer-events:none;opacity:.55"></canvas>';
     }
-    if(s.multi){
-      var go=document.createElement('button');
-      go.type='button';
-      go.className='arch-opt';
-      go.style.gridColumn='1/-1';
-      go.style.background='var(--gold)';
-      go.style.color='var(--black)';
-      go.style.fontWeight='800';
-      go.style.fontSize='1rem';
-      go.textContent='بساز، معمار!';
-      go.addEventListener('click',function(){finish();});
-      optsEl.appendChild(go);
-    }
-    backBtn.style.visibility=(step===0)?'hidden':'visible';
   }
-  function next(){
-    if(step<STEPS.length-1){step++;renderStep();}
-    else finish();
+  var navDec=(sty==='glass')?'backdrop-filter:blur(14px);background:'+hexA(pal.bg,0.55)+';':'';
+  var glassCard=(sty==='glass')?'backdrop-filter:blur(12px);background:'+(light?'rgba(255,255,255,.55)':'rgba(255,255,255,.06)')+';border:1px solid '+hexA(pal.a,0.35)+';':'';
+  var gridDec=(sty==='tech')?'background-image:linear-gradient('+hexA(pal.a,0.08)+' 1px,transparent 1px),linear-gradient(90deg,'+hexA(pal.a,0.08)+' 1px,transparent 1px);background-size:44px 44px;':'';
+  var heroAlign=(lay==='left')?'text-align:right;align-items:flex-start':(lay==='grid')?'text-align:right;align-items:flex-start':'text-align:center;align-items:center';
+  var heroSplit=(lay==='split');
+  var heroMin=(lay==='wide')?'min-height:96vh':'min-height:90vh';
+  var extras={};
+  var e3;
+  for(e3=0;e3<st.extras.length;e3++){extras[st.extras[e3]]=true;}
+  var marq='';
+  if(an!=='none'){
+    var mqHtml='';
+    var m2;
+    for(m2=0;m2<ty.mq.length;m2++){mqHtml+='<span>'+ty.mq[m2]+'</span><i>✦</i>';}
+    marq='<div class="mq"><div class="mqt">'+mqHtml+mqHtml+'</div></div>';
   }
-  function finish(){
-    var code=genCode(state);
-    var frame=document.getElementById('archFrame');
-    frame.setAttribute('srcdoc',code);
-    var pal=PALETTES[state.palette],ty=TYPES[state.type];
-    var sw=document.getElementById('arSwatches');
-    sw.innerHTML='<span style="background:'+pal.bg+'"></span><span style="background:'+pal.a+'"></span><span style="background:'+pal.b+'"></span>';
-    var t=document.getElementById('arTitle');
-    if(t)t.textContent='طرح «'+ty.n+'» با پالت «'+pal.n+'»';
-    var meta=document.getElementById('arMeta');
-    var exNames=[];
-    for(var i=0;i<state.extras.length;i++)exNames.push(EXTRAS[state.extras[i]].n);
-    meta.innerHTML='<span>'+ty.n+'</span><span>'+pal.n+'</span><span>'+ANIMS[state.anim].n+'</span><span>'+STYLES[state.style].n+'</span>'+
-      (exNames.length?'<span>+ '+exNames.join('، ')+'</span>':'');
-    wizard.style.display='none';
-    resultBox.classList.add('show');
-    window.__archCode=code;
-    T.SFX.success();
-    T.toast('طرح طلایی‌ات آماده شد!');
-    if(T.FX)T.FX.burst(window.innerWidth/2,window.innerHeight/2,60);
+  var cards='';
+  var fi;
+  for(fi=0;fi<ty.f.length;fi++){
+    cards+='<div class="card" data-rv><span class="cnum">۰'+(fi+1)+'</span><h3>'+ty.f[fi][0]+'</h3><p>'+ty.f[fi][1]+'</p></div>';
   }
-  backBtn.addEventListener('click',function(){if(step>0){step--;renderStep();}});
+  var gallery=(st.extras.indexOf(2)>=0)?'<section class="sec" id="gallery"><h2 data-rv>گالری</h2><div class="grid3">'+
+    '<div class="gal" data-rv style="background:linear-gradient(135deg,'+hexA(pal.a,0.5)+','+hexA(pal.b,0.35)+')"><span>نمونه ۱</span></div>'+
+    '<div class="gal" data-rv style="background:linear-gradient(135deg,'+hexA(pal.b,0.45)+','+hexA(pal.a,0.3)+')"><span>نمونه ۲</span></div>'+
+    '<div class="gal" data-rv style="background:linear-gradient(135deg,'+hexA(pal.a,0.35)+','+hexA(pal.b,0.5)+')"><span>نمونه ۳</span></div>'+
+    '<div class="gal" data-rv style="background:linear-gradient(135deg,'+hexA(pal.b,0.3)+','+hexA(pal.a,0.45)+')"><span>نمونه ۴</span></div>'+
+    '<div class="gal" data-rv style="background:linear-gradient(135deg,'+hexA(pal.a,0.4)+','+hexA(pal.b,0.4)+')"><span>نمونه ۵</span></div>'+
+    '<div class="gal" data-rv style="background:linear-gradient(135deg,'+hexA(pal.b,0.5)+','+hexA(pal.a,0.25)+')"><span>نمونه ۶</span></div></div></section>':'';
+  var stats=(st.extras.indexOf(4)>=0)?'<section class="sec alt"><div class="stats">'+
+    '<div data-rv><b class="cnt" data-c="250">۰</b><span>مشتری خوشحال</span></div>'+
+    '<div data-rv><b class="cnt" data-c="98" data-suf="٪">۰</b><span>رضایت</span></div>'+
+    '<div data-rv><b class="cnt" data-c="12" data-suf="+">۰</b><span>سال تجربه</span></div>'+
+    '<div data-rv><b class="cnt" data-c="40" data-suf="+">۰</b><span>پروژه</span></div></div></section>':'';
+  var reviews=(st.extras.indexOf(3)>=0)?'<section class="sec" id="reviews"><h2 data-rv>مشتریان چه می‌گویند</h2><div class="tst" data-rv><p id="tstQ">«بهترین تصمیمی بود که برای برندم گرفتم.»</p><b id="tstN">— مشتری ۱</b><div class="dots"><i class="on"></i><i></i><i></i></div></div></section>':'';
+  var pricing=(st.extras.indexOf(7)>=0||st.type===0||st.type===2)?'<section class="sec" id="pricing"><h2 data-rv>پلن‌ها</h2><div class="grid3 prices">'+
+    '<div class="card price" data-rv><h3>پایه</h3><b>۲٬۹۰۰</b><small>هزار تومان</small><ul><li>طراحی ریسپانسیو</li><li>۱ ماه پشتیبانی</li><li>سئوی پایه</li></ul><a class="btn2" href="#contact">انتخاب</a></div>'+
+    '<div class="card price hot" data-rv><span class="tag">پیشنهاد ما</span><h3>حرفه‌ای</h3><b>۵٬۹۰۰</b><small>هزار تومان</small><ul><li>همه‌ی امکانات پایه</li><li>۳ ماه پشتیبانی</li><li>سئوی کامل</li><li>انیمیشن‌های اختصاصی</li></ul><a class="btn2 gold" href="#contact">انتخاب</a></div>'+
+    '<div class="card price" data-rv><h3>سازمانی</h3><b>تماس</b><small>قیمت‌گذاری اختصاصی</small><ul><li>همه‌چیز نامحدود</li><li>پشتیبانی اختصاصی</li><li>توسعه‌ی سفارشی</li></ul><a class="btn2" href="#contact">تماس بگیر</a></div></div></section>':'';
+  var faqSec=(st.extras.indexOf(6)>=0)?'<section class="sec" id="faqsec"><h2 data-rv>سوالات متداول</h2>'+
+    '<div class="faq" data-rv><button>چقدر طول می‌کشد؟</button><div><p>به دامنه پروژه بستگی دارد؛ معمولاً ۲ تا ۸ هفته با جدول زمانی شفاف.</p></div></div>'+
+    '<div class="faq" data-rv><button>هزینه چطور محاسبه می‌شود؟</button><div><p>بر اساس حجم کار؛ برآورد رایگان و مکتوب قبل از شروع می‌گیرید.</p></div></div>'+
+    '<div class="faq" data-rv><button>پشتیبانی چطور است؟</button><div><p>۱ ماه رایگان بعد از تحویل، و بعدش قرارداد اختیاری.</p></div></div>'+
+    '<div class="faq" data-rv><button>می‌توانم خودم ویرایش کنم؟</button><div><p>بله؛ پنل مدیریت ساده تحویل داده می‌شود.</p></div></div></section>':'';
+  var formSec=(st.extras.indexOf(1)>=0)?'<section class="sec" id="contact"><h2 data-rv>تماس با ما</h2><p data-rv style="opacity:.7;max-width:460px;margin-bottom:2rem">فرم را پر کن؛ خیلی زود جواب می‌دهیم.</p>'+
+    '<form class="form" data-rv onsubmit="event.preventDefault();this.reset();alert(\'پیام شما ثبت شد!\')">'+
+    '<div class="frow"><input required placeholder="نام شما"><input required type="email" placeholder="ایمیل"></div>'+
+    '<textarea rows="4" placeholder="پیام شما..."></textarea><button class="btn2 gold" type="submit">ارسال پیام</button></form></section>':
+    '<section class="sec"><div class="ctaband"><h2 data-rv>آماده‌ی شروع هستید؟</h2><a class="btn2 gold" href="mailto:hello@example.com">همین حالا تماس بگیرید</a></div></section>';
+  var newsSec=(st.extras.indexOf(5)>=0)?'<section class="sec"><h2 data-rv>خبرنامه</h2><p data-rv style="opacity:.7">از تازه‌ها زودتر باخبر شو.</p>'+
+    '<div class="news" data-rv><input placeholder="ایمیل شما..."><button class="btn2 gold" onclick="alert(\'عضویت انجام شد!\')">عضویت</button></div></section>':'';
+  var sponsors=(st.extras.indexOf(8)>=0)?'<section class="sec" style="padding-block:2.5rem"><div class="spband" data-rv><span>شریکان ما:</span><b>آریا</b><b>پارس</b><b>نوین</b><b>مانا</b><b>رایکا</b><b>دنا</b></div></section>':'';
+  var chatFab=(st.extras.indexOf(0)>=0)?'<div class="chatfab" onclick="alert(\'چت آنلاین به‌زودی!\')">💬 گفت‌وگو</div>':'';
+  var callFab=(st.extras.indexOf(9)>=0)?'<a class="callfab" href="tel:+98144444444">📞 تماس سریع</a>':'';
+  var heroInner=heroSplit?
+    '<div class="hero-split"><div class="hs-txt"><span class="kick">'+ty.n+'</span><h1>'+ty.t.split('،')[0]+'<i>.</i></h1><p class="tag">'+ty.s+'</p><div class="btns"><a class="btn2 gold" href="#feat">'+ty.cta+'</a><a class="btn2 ghost" href="#contact">تماس</a></div></div>'+
+    '<div class="hs-art"><div class="artbox"><span>'+ty.b+'</span></div></div></div>':
+    '<div class="hero-inner"><span class="kick">'+ty.n+'</span><h1>'+ty.t.split('،')[0]+'<i>.</i></h1><p class="tag">'+ty.s+'</p><div class="btns"><a class="btn2 gold" href="#feat">'+ty.cta+'</a><a class="btn2 ghost" href="#contact">تماس</a></div></div>';
+  return '<!DOCTYPE html><html lang="fa" dir="rtl"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">'+
+    '<title>'+ty.n+' — طرح پیشنهادی TEKA</title>'+
+    '<link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;700;900&display=swap" rel="stylesheet">'+
+    '<style>:root{--bg:'+pal.bg+';--fg:'+pal.fg+';--a:'+pal.a+';--b:'+pal.b+';--card:'+cardBg+';--cbd:'+cardBd+';--sh:'+shadow+';--shh:'+shadowH+';--e:cubic-bezier(.16,1,.3,1);--r:'+radius+'}'+
+    '*{margin:0;padding:0;box-sizing:border-box}html{scroll-behavior:smooth}body{background:var(--bg);color:var(--fg);font-family:'+fontFam+';font-weight:'+fw+';letter-spacing:'+ls+';line-height:1.9;overflow-x:hidden}'+
+    'nav{display:flex;justify-content:space-between;align-items:center;padding:1.1rem 5%;position:sticky;top:0;z-index:50;border-bottom:1px solid transparent;transition:.35s;'+navDec+'}'+
+    'nav.sc{background:'+navBg+';border-color:'+hexA(pal.a,0.25)+';backdrop-filter:blur(14px)}'+
+    '.brand{font-weight:900;font-size:1.25rem}.brand i{color:var(--a);font-style:normal}'+
+    '.nlinks{display:flex;gap:1.3rem}.nlinks a{color:var(--fg);text-decoration:none;font-size:.88rem;font-weight:400;opacity:.75}.nlinks a:hover{opacity:1;color:var(--a)}'+
+    '.burger{display:none;flex-direction:column;gap:5px;background:none;border:none;cursor:pointer}.burger span{width:22px;height:2px;background:var(--fg);transition:.3s}'+
+    '.mmenu{display:none;flex-direction:column;position:fixed;inset:0;background:'+pal.bg+';z-index:99;padding:3rem 8%;gap:.2rem}.mmenu a{color:var(--fg);text-decoration:none;font-size:1.5rem;font-weight:800;padding:.7rem 0;border-bottom:1px solid '+hexA(pal.a,0.2)+'}.mmenu .x{align-self:flex-start;font-size:1.6rem;background:none;border:none;color:var(--fg);cursor:pointer;margin-bottom:1rem}'+
+    '.hero{'+heroMin+';display:flex;align-items:center;justify-content:center;position:relative;overflow:hidden;padding:5rem 5%;'+gridDec+'}'+
+    '.hero-inner{max-width:840px;margin:0 auto;position:relative;z-index:2;display:flex;flex-direction:column;'+heroAlign+'}'+
+    '.kick{display:inline-block;border:1px solid '+hexA(pal.a,0.5)+';color:var(--a);border-radius:999px;padding:.3rem 1.2rem;font-size:.8rem;font-weight:700;margin-bottom:1.4rem;width:fit-content}'+
+    'h1{font-size:clamp(2.3rem,6.5vw,4.5rem);font-weight:900;line-height:1.3}h1 i{color:var(--a);font-style:normal}'+
+    '.tag{font-size:1.08rem;opacity:.72;margin:1.3rem auto 2.2rem;max-width:540px}'+
+    '.btns{display:flex;gap:.9rem;flex-wrap:wrap}'+
+    '.btn2{display:inline-flex;align-items:center;justify-content:center;background:var(--a);color:'+pal.bg+';padding:.95rem 2.3rem;border-radius:var(--r);text-decoration:none;font-weight:800;transition:.3s;border:1.5px solid var(--a);cursor:pointer;font-family:inherit;font-size:.98rem}'+
+    '.btn2:hover{transform:translateY(-3px);box-shadow:0 14px 34px '+hexA(pal.a,0.4)+'}'+
+    '.btn2.ghost{background:transparent;color:var(--a)}.btn2.ghost:hover{background:var(--a);color:'+pal.bg+'}'+
+    '.hero-split{display:grid;grid-template-columns:1.1fr 1fr;gap:3rem;align-items:center;max-width:1100px;width:100%;position:relative;z-index:2}.hs-txt{text-align:right}'+
+    '.artbox{aspect-ratio:1;border-radius:var(--r);background:linear-gradient(135deg,'+hexA(pal.a,0.9)+','+hexA(pal.b,0.7)+');display:grid;place-items:center;font-size:3.2rem;font-weight:900;color:'+pal.bg+';box-shadow:var(--sh);transform:rotate(-3deg)}'+
+    '.mq{overflow:hidden;direction:ltr;border-block:1px solid '+hexA(pal.a,0.25)+';padding:1rem 0;background:'+secAlt+'}.mqt{display:flex;gap:2.2rem;width:max-content;animation:mqm 26s linear infinite}.mq span{font-weight:800;white-space:nowrap;font-size:1.05rem}.mq i{color:var(--a);font-style:normal}@keyframes mqm{to{transform:translateX(-50%)}}'+
+    '.sec{padding:5rem 5%;max-width:1160px;margin:0 auto;position:relative}.sec.alt{'+(light?'background:rgba(0,0,0,.03)':'background:rgba(255,255,255,.03)')+';max-width:none}'+
+    'h2{font-size:clamp(1.6rem,3.4vw,2.4rem);font-weight:900;margin-bottom:2.4rem;position:relative}h2::after{content:"";display:block;width:56px;height:3px;background:linear-gradient(90deg,var(--a),var(--b));border-radius:3px;margin-top:.55rem}'+
+    '.grid3{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:1.4rem}'+
+    '.card{'+glassCard+'background:'+cardBg+';border:1px solid var(--cbd);border-radius:var(--r);padding:1.8rem;position:relative;overflow:hidden;box-shadow:var(--sh)}'+
+    '.card::before{content:"";position:absolute;top:0;right:0;left:0;height:3px;background:linear-gradient(90deg,var(--a),var(--b))}'+
+    '.cnum{font-size:2.4rem;font-weight:900;color:'+hexA(pal.a,0.25)+';line-height:1;display:block}'+
+    '.card h3{font-size:1.15rem;font-weight:900;margin:.5rem 0 .4rem}.card p{font-size:.92rem;opacity:.72}'+
+    '.gal{height:210px;border-radius:var(--r);display:grid;place-items:end center;padding-bottom:1rem;color:'+pal.bg+';font-weight:800;transition:.4s var(--e);cursor:pointer;overflow:hidden}.gal:hover{transform:scale(1.03)}'+
+    '.stats{display:flex;gap:3.5rem;justify-content:center;flex-wrap:wrap;max-width:1160px;margin:0 auto;padding:4.5rem 5%}.stats b{display:block;font-size:2.6rem;font-weight:900;color:var(--a)}.stats span{opacity:.6;font-size:.85rem}.stats div{text-align:center}'+
+    '.tst{max-width:640px;margin:0 auto;text-align:center;background:'+cardBg+';border:1px solid var(--cbd);border-radius:var(--r);padding:2.4rem;box-shadow:var(--sh)}.tst p{font-size:1.15rem;font-weight:700}.tst b{display:block;margin-top:1rem;color:var(--a)}.dots{margin-top:1.2rem;display:flex;gap:.4rem;justify-content:center}.dots i{width:8px;height:8px;border-radius:50%;background:'+hexA(pal.a,0.3)+';transition:.3s}.dots i.on{background:var(--a);transform:scale(1.2)}'+
+    '.price{text-align:center}.price b{font-size:2.1rem;font-weight:900;color:var(--a);display:block;margin:.8rem 0 0}.price small{opacity:.55}.price ul{list-style:none;margin:1.2rem 0;text-align:right}.price li{padding:.4rem 0;border-bottom:1px dashed var(--cbd);font-size:.88rem}.price .tag{position:absolute;top:1rem;left:1rem;background:var(--a);color:'+pal.bg+';border-radius:999px;padding:.15rem .9rem;font-size:.7rem;font-weight:800}.price.hot{border-color:var(--a)}'+
+    '.faq{max-width:680px;margin:0 auto}.faq button{width:100%;text-align:right;background:'+cardBg+';border:1px solid var(--cbd);border-radius:var(--r);padding:1rem 1.3rem;font-family:inherit;font-weight:800;font-size:.98rem;color:var(--fg);cursor:pointer;margin-top:.7rem;transition:.3s;display:flex;justify-content:space-between;align-items:center}.faq button::after{content:"+";font-size:1.3rem;color:var(--a)}.faq button.open::after{content:"−"}.faq div{max-height:0;overflow:hidden;transition:max-height .45s var(--e)}.faq div p{padding:1rem 1.3rem;opacity:.7;font-size:.92rem;border-inline:1px solid var(--cbd)}.faq div.open{max-height:220px}'+
+    '.form{display:flex;flex-direction:column;gap:1rem;max-width:560px}.frow{display:grid;grid-template-columns:1fr 1fr;gap:1rem}.form input,.form textarea{background:'+cardBg+';border:1px solid var(--cbd);color:var(--fg);padding:.85rem 1.1rem;border-radius:var(--r);font-family:inherit;font-size:16px;resize:vertical;width:100%}.form input:focus,.form textarea:focus{outline:none;border-color:var(--a)}'+
+    '.news{display:flex;gap:.5rem;max-width:460px}.news input{flex:1;background:'+cardBg+';border:1px solid var(--cbd);color:var(--fg);padding:.8rem 1.1rem;border-radius:var(--r);font-family:inherit}'+
+    '.spband{display:flex;gap:2rem;justify-content:center;flex-wrap:wrap;align-items:center;opacity:.6}.spband b{font-size:1.05rem;letter-spacing:.05em}.spband span{font-size:.8rem;color:var(--a)}'+
+    '.ctaband{text-align:center;background:linear-gradient(135deg,'+hexA(pal.a,0.12)+','+hexA(pal.b,0.12)+');border-radius:var(--r);padding:3.5rem 2rem;max-width:900px}'+
+    'footer{border-top:1px solid '+hexA(pal.a,0.2)+';padding:3.5rem 5% 2rem;position:relative}.fgrid{display:flex;justify-content:space-between;gap:2.5rem;flex-wrap:wrap;max-width:1160px;margin:0 auto 2.5rem}.fcol b{display:block;color:var(--a);font-size:.85rem;margin-bottom:.9rem}.fcol a{display:block;color:var(--fg);opacity:.65;text-decoration:none;font-size:.9rem;padding:.2rem 0}.fcol a:hover{opacity:1;color:var(--a)}.copy{text-align:center;opacity:.45;font-size:.8rem}'+
+    '.totop{position:fixed;bottom:1.4rem;right:1.4rem;width:46px;height:46px;border-radius:50%;background:var(--a);color:'+pal.bg+';border:none;font-size:1.2rem;cursor:pointer;opacity:0;pointer-events:none;transition:.3s;z-index:40}.totop.show{opacity:1;pointer-events:auto}'+
+    '.chatfab{position:fixed;bottom:1.4rem;left:1.4rem;background:var(--a);color:'+pal.bg+';border-radius:999px;padding:.75rem 1.5rem;font-weight:800;font-size:.88rem;cursor:pointer;box-shadow:0 10px 30px '+hexA(pal.a,0.5)+';z-index:40}'+
+    '.callfab{position:fixed;bottom:1.4rem;right:1.4rem;background:var(--b);color:'+pal.bg+';border-radius:999px;padding:.75rem 1.5rem;font-weight:800;font-size:.88rem;text-decoration:none;box-shadow:0 10px 30px '+hexA(pal.b,0.5)+';z-index:40}'+
+    animCSS+
+    '@media(max-width:860px){.nlinks{display:none}.burger{display:flex}.hero-split{grid-template-columns:1fr}.frow{grid-template-columns:1fr}}'+
+    '</style></head><body>'+
+    bodyDecor+
+    '<nav id="nv"><span class="brand">'+ty.b+'<i>.</i></span><div class="nlinks"><a href="#feat">خدمات</a>'+(st.extras.indexOf(2)>=0?'<a href="#gallery">گالری</a>':'')+(st.extras.indexOf(7)>=0?'<a href="#pricing">پلن‌ها</a>':'')+(st.extras.indexOf(6)>=0?'<a href="#faqsec">سوالات</a>':'')+'<a href="#contact">تماس</a></div>'+
+    '<button class="burger" id="bg" aria-label="منو"><span></span><span></span><span></span></button></nav>'+
+    '<div class="mmenu" id="mm"><button class="x" id="mmx">✕</button><a href="#feat">خدمات</a>'+(st.extras.indexOf(2)>=0?'<a href="#gallery">گالری</a>':'')+(st.extras.indexOf(7)>=0?'<a href="#pricing">پلن‌ها</a>':'')+(st.extras.indexOf(6)>=0?'<a href="#faqsec">سوالات</a>':'')+'<a href="#contact">تماس</a></div>'+
+    '<div class="hero" style="position:relative">'+heroDecor+heroInner+'</div>'+
+    marq+
+    '<section class="sec" id="feat"><h2 data-rv>چرا ما؟</h2><div class="grid3">'+cards+'</div></section>'+
+    gallery+stats+reviews+pricing+faqSec+formSec+newsSec+sponsors+
+    '<footer><div class="fgrid"><div class="fcol"><b>'+ty.b+'.</b><p style="opacity:.6;font-size:.88rem;max-width:280px">طرح اولیه‌ی تولیدشده توسط «معمارِ طلایی» استودیو TEKA — نسخه‌ی نهایی با وسواس دستی ساخته می‌شود.</p></div>'+
+    '<div class="fcol"><b>دسترسی</b><a href="#feat">خدمات</a>'+(st.extras.indexOf(2)>=0?'<a href="#gallery">گالری</a>':'')+'<a href="#contact">تماس</a></div>'+
+    '<div class="fcol"><b>تماس</b><a href="mailto:hello@example.com">hello@example.com</a><a href="#">ارومیه، ایران</a></div></div>'+
+    '<div class="copy">© ۱۴۰۵ — همه‌ی حقوق محفوظ است.</div></footer>'+
+    '<button class="totop" id="tt" aria-label="بالا">↑</button>'+chatFab+callFab+
+    '<script>'+
+    'var nv=document.getElementById("nv");'+
+    'window.addEventListener("scroll",function(){nv.classList.toggle("sc",window.scrollY>40);var tt=document.getElementById("tt");tt.classList.toggle("show",window.scrollY>500);});'+
+    'document.getElementById("tt").addEventListener("click",function(){window.scrollTo({top:0,behavior:"smooth"});});'+
+    'var bgB=document.getElementById("bg"),mm=document.getElementById("mm");'+
+    'bgB.addEventListener("click",function(){mm.style.display="flex";});'+
+    'document.getElementById("mmx").addEventListener("click",function(){mm.style.display="none";});'+
+    'mm.querySelectorAll("a").forEach(function(a){a.addEventListener("click",function(){mm.style.display="none";});});'+
+    'var rvEls=document.querySelectorAll("[data-rv]");'+
+    'if("IntersectionObserver" in window){var io=new IntersectionObserver(function(es){es.forEach(function(en){if(en.isIntersecting){en.target.classList.add("rv");io.unobserve(en.target);}});},{threshold:.12});rvEls.forEach(function(el){io.observe(el);});}else{rvEls.forEach(function(el){el.classList.add("rv");});}'+
+    'var cEls=document.querySelectorAll(".cnt");'+
+    'var cio=new IntersectionObserver(function(es){es.forEach(function(en){if(!en.isIntersecting)return;cio.unobserve(en.target);var el=en.target,tg=+el.getAttribute("data-c"),sf=el.getAttribute("data-suf")||"",t0=Date.now();(function st(){var p=Math.min((Date.now()-t0)/1600,1),e2=1-Math.pow(1-p,4);el.textContent=Math.round(tg*e2)+sf;if(p<1)requestAnimationFrame(st);})();});},{threshold:.5});'+
+    'cEls.forEach(function(el){cio.observe(el);});'+
+    (st.extras.indexOf(3)>=0?'var tq=["«بهترین تصمیمی بود که برای برندم گرفتم.»","«سرعت و دقتی که باورش سخت است!»","«کیفیت، بالاتر از هر انتظاری.»"],tn=["— مشتری ۱","— مشتری ۲","— مشتری ۳"],ti=0;'+
+    'setInterval(function(){ti=(ti+1)%3;document.getElementById("tstQ").textContent=tq[ti];document.getElementById("tstN").textContent=tn[ti];var ds=document.querySelectorAll(".dots i");ds.forEach(function(d,i2){d.classList.toggle("on",i2===ti);});},3500);':'')+
+    (st.extras.indexOf(6)>=0?'document.querySelectorAll(".faq button").forEach(function(b){b.addEventListener("click",function(){var d=b.nextElementSibling;var open=d.classList.contains("open");document.querySelectorAll(".faq div").forEach(function(x){x.classList.remove("open");});document.querySelectorAll(".faq button").forEach(function(x){x.classList.remove("open");});if(!open){d.classList.add("open");b.classList.add("open");}});});':'')+
+    (an==='cine'?'var pc=document.getElementById("pc");if(pc){var pctx=pc.getContext("2d");var PW,PH;function pf(){PW=pc.width=window.innerWidth;PH=pc.height=window.innerHeight;}pf();window.addEventListener("resize",pf);var pts=[];for(var pp=0;pp<70;pp++){pts.push({x:Math.random()*window.innerWidth,y:Math.random()*window.innerHeight,r:.6+Math.random()*1.6,vx:(Math.random()-.5)*.3,vy:(Math.random()-.5)*.25,o:.15+Math.random()*.4});}(function pdraw(){pctx.clearRect(0,0,PW,PH);for(var i=0;i<pts.length;i++){var p2=pts[i];p2.x+=p2.vx;p2.y+=p2.vy;if(p2.x<0)p2.x=PW;if(p2.x>PW)p2.x=0;if(p2.y<0)p2.y=PH;if(p2.y>PH)p2.y=0;pctx.beginPath();pctx.arc(p2.x,p2.y,p2.r,0,6.3);pctx.fillStyle="rgba('+rgbTri(pal.a)+',"+p2.o+")";pctx.fill();}requestAnimationFrame(pdraw);})();}':'')+
+    '<\/script></body></html>';
+}
+try{
+  var wizard=document.getElementById('archWizard');
+  var resultBox=document.getElementById('archResult');
+  var qEl=document.getElementById('archQ');
+  var optsEl=document.getElementById('archOpts');
+  var stepNo=document.getElementById('archStepNo');
+  var progBar=document.getElementById('archProgBar');
+  var backBtn=document.getElementById('archBack');
+  var randomBtn=document.getElementById('archRandom');
+  var arAgain=document.getElementById('arAgain');
+  var arCopy=document.getElementById('arCopy');
+  var arDl=document.getElementById('arDownload');
+  if(!wizard||!qEl||!optsEl||!stepNo||!progBar||!backBtn||!randomBtn||!arAgain||!arCopy||!arDl){return;}
+  backBtn.addEventListener('click',function(){
+    if(step>0){step--;renderStep();}
+  });
   randomBtn.addEventListener('click',function(){
     state.type=Math.floor(Math.random()*TYPES.length);
     state.palette=Math.floor(Math.random()*PALETTES.length);
@@ -2113,24 +2312,22 @@ try{
     state.font=Math.floor(Math.random()*FONTS.length);
     state.layout=Math.floor(Math.random()*LAYOUTS.length);
     state.extras=[];
-    for(var i=0;i<EXTRAS.length;i++){if(Math.random()<0.45)state.extras.push(i);}
+    var ei;
+    for(ei=0;ei<EXTRAS.length;ei++){if(Math.random()<0.45){state.extras.push(ei);}}
     finish();
   });
-  var arAgain=document.getElementById('arAgain');
-  if(arAgain)arAgain.addEventListener('click',function(){
+  arAgain.addEventListener('click',function(){
     resultBox.classList.remove('show');
     wizard.style.display='block';
     step=0;
     state={type:0,palette:0,anim:2,style:0,font:0,layout:0,extras:[1,3]};
     renderStep();
   });
-  var arCopy=document.getElementById('arCopy');
-  if(arCopy)arCopy.addEventListener('click',function(){
-    if(window.__archCode)T.copyText(window.__archCode,'کد HTML طرحت کپی شد!');
+  arCopy.addEventListener('click',function(){
+    if(window.__archCode){T.copyText(window.__archCode,'کد HTML طرحت کپی شد!');}
   });
-  var arDl=document.getElementById('arDownload');
-  if(arDl)arDl.addEventListener('click',function(){
-    if(!window.__archCode)return;
+  arDl.addEventListener('click',function(){
+    if(!window.__archCode){return;}
     try{
       var blob=new Blob([window.__archCode],{type:'text/html;charset=utf-8'});
       var a=document.createElement('a');
@@ -2141,504 +2338,312 @@ try{
       T.toast('طرح دانلود شد؛ یه قهوه مهمونم!');
     }catch(e){T.toast('دانلود ممکن نشد.',true);}
   });
-
-  function hexA(hex,a){
-    var r=parseInt(hex.slice(1,3),16),g=parseInt(hex.slice(3,5),16),b=parseInt(hex.slice(5,7),16);
-    return 'rgba('+r+','+g+','+b+','+a+')';
-  }
-  function genCode(st){
-    var pal=PALETTES[st.palette],ty=TYPES[st.type];
-    var an=ANIMS[st.anim].v,sty=STYLES[st.style].v,fo=FONTS[st.font].v,lay=LAYOUTS[st.layout].v;
-    var light=(pal.m==='light');
-    var radius=({min:'8px',lux:'3px',art:'30px',tech:'2px',cls:'10px',bold:'16px',glass:'22px',retro:'26px'})[sty];
-    var cardBg=light?'#FFFFFF':'rgba(255,255,255,.05)';
-    var cardBd=light?'rgba(0,0,0,.09)':hexA(pal.a,0.3);
-    var shadow=light?'0 14px 40px rgba(0,0,0,.08)':'0 14px 40px rgba(0,0,0,.35)';
-    var shadowH=light?'0 22px 60px rgba(0,0,0,.14)':'0 22px 60px rgba(0,0,0,.5)';
-    var secAlt=light?'rgba(0,0,0,.03)':'rgba(255,255,255,.03)';
-    var fw=({round:'700',sharp:'800',art:'800',thin:'600'})[fo];
-    var ls=({round:'0',sharp:'.02em',art:'.04em',thin:'.01em'})[fo];
-    var fontFam="'Vazirmatn',Tahoma,sans-serif";
-    var navBg=hexA(pal.bg,0.82);
-    var animCSS='',bodyDecor='',heroDecor='',revealJS='';
-    if(an==='soft'){
-      animCSS='@keyframes rv{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:none}}[data-rv]{opacity:0}[data-rv].rv{animation:rv .8s var(--e) both}';
-    }else if(an==='mid'){
-      animCSS='@keyframes rv{from{opacity:0;transform:translateY(24px)}to{opacity:1;transform:none}}[data-rv]{opacity:0}[data-rv].rv{animation:rv .85s var(--e) both}.card,.btn2{transition:transform .35s var(--e),box-shadow .35s}.card:hover{transform:translateY(-6px);box-shadow:'+shadowH+'}';
-    }else if(an==='full'||an==='cine'){
-      animCSS='@keyframes rv{from{opacity:0;transform:translateY(30px) scale(.97)}to{opacity:1;transform:none}}[data-rv]{opacity:0}[data-rv].rv{animation:rv .8s var(--e) both}'+
-        '@keyframes fl{0%,100%{transform:translateY(0) rotate(0)}50%{transform:translateY(-20px) rotate(6deg)}}'+
-        '@keyframes spinSlow{to{transform:rotate(360deg)}}'+
-        '.blob{position:absolute;border-radius:50%;filter:blur(70px);opacity:'+(light?0.22:0.28)+';animation:fl 7s ease-in-out infinite;pointer-events:none}'+
-        '.card,.btn2{transition:transform .35s var(--e),box-shadow .35s}.card:hover{transform:translateY(-8px) scale(1.02);box-shadow:'+shadowH+'}';
-      heroDecor='<div class="blob" style="width:260px;height:260px;background:'+pal.a+';top:-70px;left:-50px"></div>'+
-        '<div class="blob" style="width:200px;height:200px;background:'+pal.b+';bottom:40px;right:-40px;animation-delay:2s"></div>'+
-        '<div class="blob" style="width:150px;height:150px;background:'+pal.b+';top:45%;left:12%;animation-delay:4s;opacity:'+(light?0.14:0.18)+'"></div>';
-      if(an==='cine'){
-        bodyDecor='<canvas id="pc" style="position:fixed;inset:0;z-index:0;pointer-events:none;opacity:.55"></canvas>';
-      }
-    }
-    var navDec=(sty==='glass')?'backdrop-filter:blur(14px);background:'+hexA(pal.bg,0.55)+';':'';
-    var glassCard=(sty==='glass')?'backdrop-filter:blur(12px);background:'+(light?'rgba(255,255,255,.55)':'rgba(255,255,255,.06)')+';border:1px solid '+hexA(pal.a,0.35)+';':'';
-    var gridDec=(sty==='tech')?'background-image:linear-gradient('+hexA(pal.a,0.08)+' 1px,transparent 1px),linear-gradient(90deg,'+hexA(pal.a,0.08)+' 1px,transparent 1px);background-size:44px 44px;':'';
-    var heroAlign=(lay==='left')?'text-align:right;align-items:flex-start':(lay==='grid')?'text-align:right;align-items:flex-start':'text-align:center;align-items:center';
-    var heroSplit=(lay==='split');
-    var heroMin=(lay==='wide')?'min-height:96vh':'min-height:90vh';
-    var extras={};var e3;
-    for(e3=0;e3<st.extras.length;e3++)extras[st.extras[e3]]=true;
-    var marq='';
-    if(an!=='none'){
-      var mqHtml='';var m2;
-      for(m2=0;m2<ty.mq.length;m2++)mqHtml+='<span>'+ty.mq[m2]+'</span><i>✦</i>';
-      marq='<div class="mq"><div class="mqt">'+mqHtml+mqHtml+'</div></div>';
-    }
-    var cards='';var fi;
-    for(fi=0;fi<ty.f.length;fi++){
-      cards+='<div class="card" data-rv><span class="cnum">۰'+(fi+1)+'</span><h3>'+ty.f[fi][0]+'</h3><p>'+ty.f[fi][1]+'</p></div>';
-    }
-    var gallery=(extras[2])?'<section class="sec" id="gallery"><h2 data-rv>گالری</h2><div class="grid3">'+
-      '<div class="gal" data-rv style="background:linear-gradient(135deg,'+hexA(pal.a,0.5)+','+hexA(pal.b,0.35)+')"><span>نمونه ۱</span></div>'+
-      '<div class="gal" data-rv style="background:linear-gradient(135deg,'+hexA(pal.b,0.45)+','+hexA(pal.a,0.3)+')"><span>نمونه ۲</span></div>'+
-      '<div class="gal" data-rv style="background:linear-gradient(135deg,'+hexA(pal.a,0.35)+','+hexA(pal.b,0.5)+')"><span>نمونه ۳</span></div>'+
-      '<div class="gal" data-rv style="background:linear-gradient(135deg,'+hexA(pal.b,0.3)+','+hexA(pal.a,0.45)+')"><span>نمونه ۴</span></div>'+
-      '<div class="gal" data-rv style="background:linear-gradient(135deg,'+hexA(pal.a,0.4)+','+hexA(pal.b,0.4)+')"><span>نمونه ۵</span></div>'+
-      '<div class="gal" data-rv style="background:linear-gradient(135deg,'+hexA(pal.b,0.5)+','+hexA(pal.a,0.25)+')"><span>نمونه ۶</span></div></div></section>':'';
-    var stats=(extras[4])?'<section class="sec alt"><div class="stats">'+
-      '<div data-rv><b class="cnt" data-c="250">۰</b><span>مشتری خوشحال</span></div>'+
-      '<div data-rv><b class="cnt" data-c="98" data-suf="٪">۰</b><span>رضایت</span></div>'+
-      '<div data-rv><b class="cnt" data-c="12" data-suf="+">۰</b><span>سال تجربه</span></div>'+
-      '<div data-rv><b class="cnt" data-c="40" data-suf="+">۰</b><span>پروژه</span></div></div></section>':'';
-    var reviews=(extras[3])?'<section class="sec" id="reviews"><h2 data-rv>مشتریان چه می‌گویند</h2><div class="tst" data-rv><p id="tstQ">«بهترین تصمیمی بود که برای برندم گرفتم.»</p><b id="tstN">— مشتری ۱</b><div class="dots"><i class="on"></i><i></i><i></i></div></div></section>':'';
-    var pricing=(extras[7]||st.type===0||st.type===2)?'<section class="sec" id="pricing"><h2 data-rv>پلن‌ها</h2><div class="grid3 prices">'+
-      '<div class="card price" data-rv><h3>پایه</h3><b>۲٬۹۰۰</b><small>هزار تومان</small><ul><li>طراحی ریسپانسیو</li><li>۱ ماه پشتیبانی</li><li>سئوی پایه</li></ul><a class="btn2" href="#contact">انتخاب</a></div>'+
-      '<div class="card price hot" data-rv><span class="tag">پیشنهاد ما</span><h3>حرفه‌ای</h3><b>۵٬۹۰۰</b><small>هزار تومان</small><ul><li>همه‌ی امکانات پایه</li><li>۳ ماه پشتیبانی</li><li>سئوی کامل</li><li>انیمیشن‌های اختصاصی</li></ul><a class="btn2 gold" href="#contact">انتخاب</a></div>'+
-      '<div class="card price" data-rv><h3>سازمانی</h3><b>تماس</b><small>قیمت‌گذاری اختصاصی</small><ul><li>همه‌چیز نامحدود</li><li>پشتیبانی اختصاصی</li><li>توسعه‌ی سفارشی</li></ul><a class="btn2" href="#contact">تماس بگیر</a></div></div></section>':'';
-    var faq=(extras[6])?'<section class="sec" id="faq"><h2 data-rv>سوالات متداول</h2>'+
-      '<div class="faq" data-rv><button>چقدر طول می‌کشد؟</button><div><p>به دامنه پروژه بستگی دارد؛ معمولاً ۲ تا ۸ هفته با جدول زمانی شفاف.</p></div></div>'+
-      '<div class="faq" data-rv><button>هزینه چطور محاسبه می‌شود؟</button><div><p>بر اساس حجم کار؛ برآورد رایگان و مکتوب قبل از شروع می‌گیرید.</p></div></div>'+
-      '<div class="faq" data-rv><button>پشتیبانی چطور است؟</button><div><p>۱ ماه رایگان بعد از تحویل، و بعدش قرارداد اختیاری.</p></div></div>'+
-      '<div class="faq" data-rv><button>می‌توانم خودم ویرایش کنم؟</button><div><p>بله؛ پنل مدیریت ساده تحویل داده می‌شود.</p></div></div></section>':'';
-    var form=(extras[1])?'<section class="sec" id="contact"><h2 data-rv>تماس با ما</h2><p data-rv style="opacity:.7;max-width:460px;margin-bottom:2rem">فرم را پر کن؛ خیلی زود جواب می‌دهیم.</p>'+
-      '<form class="form" data-rv onsubmit="event.preventDefault();this.reset();alert(\'پیام شما ثبت شد!\')">'+
-      '<div class="frow"><input required placeholder="نام شما"><input required type="email" placeholder="ایمیل"></div>'+
-      '<textarea rows="4" placeholder="پیام شما..."></textarea><button class="btn2 gold" type="submit">ارسال پیام</button></form></section>':
-      '<section class="sec ctaband"><h2 data-rv>آماده‌ی شروع هستید؟</h2><a class="btn2 gold" href="mailto:hello@example.com">همین حالا تماس بگیرید</a></section>';
-    var news=(extras[5])?'<section class="sec"><h2 data-rv>خبرنامه</h2><p data-rv style="opacity:.7">از تازه‌ها زودتر باخبر شو.</p>'+
-      '<div class="news" data-rv><input placeholder="ایمیل شما..."><button class="btn2 gold" onclick="alert(\'عضویت انجام شد!\')">عضویت</button></div></section>':'';
-    var chat=(extras[0])?'<div class="chatfab" onclick="alert(\'چت آنلاین به‌زودی!\')">💬 گفت‌وگو</div>':'';
-    var heroInner=heroSplit?
-      '<div class="hero-split"><div class="hs-txt"><span class="kick">'+ty.n+'</span><h1>'+ty.t.split('،')[0]+'<i>.</i></h1><p class="tag">'+ty.s+'</p><div class="btns"><a class="btn2 gold" href="#feat">'+ty.cta+'</a><a class="btn2 ghost" href="#contact">تماس</a></div></div>'+
-      '<div class="hs-art"><div class="artbox"><span>'+ty.b+'</span></div></div></div>':
-      '<div class="hero-inner"><span class="kick">'+ty.n+'</span><h1>'+ty.t.split('،')[0]+'<i>.</i></h1><p class="tag">'+ty.s+'</p><div class="btns"><a class="btn2 gold" href="#feat">'+ty.cta+'</a><a class="btn2 ghost" href="#contact">تماس</a></div></div>';
-    return '<!DOCTYPE html><html lang="fa" dir="rtl"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">'+
-      '<title>'+ty.n+' — طرح پیشنهادی TEKA</title>'+
-      '<link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;700;900&display=swap" rel="stylesheet">'+
-      '<style>:root{--bg:'+pal.bg+';--fg:'+pal.fg+';--a:'+pal.a+';--b:'+pal.b+';--card:'+cardBg+';--cbd:'+cardBd+';--sh:'+shadow+';--shh:'+shadowH+';--e:cubic-bezier(.16,1,.3,1);--r:'+radius+'}'+
-      '*{margin:0;padding:0;box-sizing:border-box}html{scroll-behavior:smooth}body{background:var(--bg);color:var(--fg);font-family:'+fontFam+';font-weight:'+fw+';letter-spacing:'+ls+';line-height:1.9;overflow-x:hidden}'+
-      'nav{display:flex;justify-content:space-between;align-items:center;padding:1.1rem 5%;position:sticky;top:0;z-index:50;border-bottom:1px solid transparent;transition:.35s;'+navDec+'}'+
-      'nav.sc{background:'+navBg+';border-color:'+hexA(pal.a,0.25)+';backdrop-filter:blur(14px)}'+
-      '.brand{font-weight:900;font-size:1.25rem}.brand i{color:var(--a);font-style:normal}'+
-      '.nlinks{display:flex;gap:1.3rem}.nlinks a{color:var(--fg);text-decoration:none;font-size:.88rem;font-weight:400;opacity:.75}.nlinks a:hover{opacity:1;color:var(--a)}'+
-      '.burger{display:none;flex-direction:column;gap:5px;background:none;border:none;cursor:pointer}.burger span{width:22px;height:2px;background:var(--fg);transition:.3s}'+
-      '.mmenu{display:none;flex-direction:column;position:fixed;inset:0;background:'+pal.bg+';z-index:99;padding:3rem 8%;gap:.2rem}.mmenu a{color:var(--fg);text-decoration:none;font-size:1.5rem;font-weight:800;padding:.7rem 0;border-bottom:1px solid '+hexA(pal.a,0.2)+'}.mmenu .x{align-self:flex-start;font-size:1.6rem;background:none;border:none;color:var(--fg);cursor:pointer;margin-bottom:1rem}'+
-      '.hero{'+heroMin+';display:flex;align-items:center;justify-content:center;position:relative;overflow:hidden;padding:5rem 5%;'+gridDec+'}'+
-      '.hero-inner{max-width:840px;margin:0 auto;text-align:center;position:relative;z-index:2;display:flex;flex-direction:column;'+heroAlign+'}'+
-      '.kick{display:inline-block;border:1px solid '+hexA(pal.a,0.5)+';color:var(--a);border-radius:999px;padding:.3rem 1.2rem;font-size:.8rem;font-weight:700;margin-bottom:1.4rem;width:fit-content}'+
-      (heroAlign.indexOf('center')>=0?'.kick{margin-inline:auto}':'')+
-      'h1{font-size:clamp(2.3rem,6.5vw,4.5rem);font-weight:900;line-height:1.3}h1 i{color:var(--a);font-style:normal}'+
-      '.tag{font-size:1.08rem;opacity:.72;margin:1.3rem auto 2.2rem;max-width:540px}'+
-      '.btns{display:flex;gap:.9rem;flex-wrap:wrap;'+(heroAlign.indexOf('center')>=0?'justify-content:center':'')+'}'+
-      '.btn2{display:inline-flex;align-items:center;justify-content:center;background:var(--a);color:'+pal.bg+';padding:.95rem 2.3rem;border-radius:var(--r);text-decoration:none;font-weight:800;transition:.3s;border:1.5px solid var(--a);cursor:pointer;font-family:inherit;font-size:.98rem}'+
-      '.btn2:hover{transform:translateY(-3px);box-shadow:0 14px 34px '+hexA(pal.a,0.4)+'}'+
-      '.btn2.gold{background:var(--a);color:'+pal.bg+'}.btn2.ghost{background:transparent;color:var(--a)}.btn2.ghost:hover{background:var(--a);color:'+pal.bg+'}'+
-      '.hero-split{display:grid;grid-template-columns:1.1fr 1fr;gap:3rem;align-items:center;max-width:1100px;width:100%;position:relative;z-index:2}.hs-txt{text-align:right}.hs-txt .btns{justify-content:flex-start}'+
-      '.artbox{aspect-ratio:1;border-radius:var(--r);background:linear-gradient(135deg,'+hexA(pal.a,0.9)+','+hexA(pal.b,0.7)+');display:grid;place-items:center;font-size:3.2rem;font-weight:900;color:'+pal.bg+';box-shadow:var(--sh);transform:rotate(-3deg)}'+
-      '.mq{overflow:hidden;direction:ltr;border-block:1px solid '+hexA(pal.a,0.25)+';padding:1rem 0;background:'+secAlt+'}.mqt{display:flex;gap:2.2rem;width:max-content;animation:mqm 26s linear infinite}.mq span{font-weight:800;white-space:nowrap;font-size:1.05rem}.mq i{color:var(--a);font-style:normal}@keyframes mqm{to{transform:translateX(-50%)}}'+
-      '.sec{padding:5rem 5%;max-width:1160px;margin:0 auto;position:relative}.sec.alt{'+(light?'background:rgba(0,0,0,.03)':'background:rgba(255,255,255,.03)')+';max-width:none}'+
-      'h2{font-size:clamp(1.6rem,3.4vw,2.4rem);font-weight:900;margin-bottom:2.4rem;position:relative}h2::after{content:"";display:block;width:56px;height:3px;background:linear-gradient(90deg,var(--a),var(--b));border-radius:3px;margin-top:.55rem}'+
-      '.grid3{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:1.4rem}'+
-      '.card{'+glassCard+'background:'+cardBg+';border:1px solid var(--cbd);border-radius:var(--r);padding:1.8rem;position:relative;overflow:hidden;box-shadow:var(--sh)}'+
-      '.card::before{content:"";position:absolute;top:0;right:0;left:0;height:3px;background:linear-gradient(90deg,var(--a),var(--b))}'+
-      '.cnum{font-size:2.4rem;font-weight:900;color:'+hexA(pal.a,0.25)+';line-height:1;display:block}'+
-      '.card h3{font-size:1.15rem;font-weight:900;margin:.5rem 0 .4rem}.card p{font-size:.92rem;opacity:.72}'+
-      '.gal{height:210px;border-radius:var(--r);display:grid;place-items:end center;padding-bottom:1rem;color:'+pal.bg+';font-weight:800;transition:.4s var(--e);cursor:pointer;overflow:hidden}.gal:hover{transform:scale(1.03)}'+
-      '.stats{display:flex;gap:3.5rem;justify-content:center;flex-wrap:wrap;max-width:1160px;margin:0 auto;padding:4.5rem 5%}.stats b{display:block;font-size:2.6rem;font-weight:900;color:var(--a)}.stats span{opacity:.6;font-size:.85rem}.stats div{text-align:center}'+
-      '.tst{max-width:640px;margin:0 auto;text-align:center;background:'+cardBg+';border:1px solid var(--cbd);border-radius:var(--r);padding:2.4rem;box-shadow:var(--sh)}.tst p{font-size:1.15rem;font-weight:700}.tst b{display:block;margin-top:1rem;color:var(--a)}.dots{margin-top:1.2rem;display:flex;gap:.4rem;justify-content:center}.dots i{width:8px;height:8px;border-radius:50%;background:'+hexA(pal.a,0.3)+';transition:.3s}.dots i.on{background:var(--a);transform:scale(1.2)}'+
-      '.price{text-align:center}.price b{font-size:2.1rem;font-weight:900;color:var(--a);display:block;margin:.8rem 0 0}.price small{opacity:.55}.price ul{list-style:none;margin:1.2rem 0;text-align:right}.price li{padding:.4rem 0;border-bottom:1px dashed var(--cbd);font-size:.88rem}.price .tag{position:absolute;top:1rem;left:1rem;background:var(--a);color:'+pal.bg+';border-radius:999px;padding:.15rem .9rem;font-size:.7rem;font-weight:800}.price.hot{border-color:var(--a);transform:scale(1.03)}'+
-      '.faq{max-width:680px;margin:0 auto}.faq button{width:100%;text-align:right;background:'+cardBg+';border:1px solid var(--cbd);border-radius:var(--r);padding:1rem 1.3rem;font-family:inherit;font-weight:800;font-size:.98rem;color:var(--fg);cursor:pointer;margin-top:.7rem;transition:.3s;display:flex;justify-content:space-between;align-items:center}.faq button::after{content:"+";font-size:1.3rem;color:var(--a)}.faq button.open::after{content:"−"}.faq div{max-height:0;overflow:hidden;transition:max-height .45s var(--e)}.faq div p{padding:1rem 1.3rem;opacity:.7;font-size:.92rem;border-inline:1px solid var(--cbd)}.faq div.open{max-height:200px}'+
-      '.form{display:flex;flex-direction:column;gap:1rem;max-width:560px}.frow{display:grid;grid-template-columns:1fr 1fr;gap:1rem}.form input,.form textarea{background:'+cardBg+';border:1px solid var(--cbd);color:var(--fg);padding:.85rem 1.1rem;border-radius:var(--r);font-family:inherit;font-size:.95rem;resize:vertical;width:100%}.form input:focus,.form textarea:focus{outline:none;border-color:var(--a)}'+
-      '.news{display:flex;gap:.5rem;max-width:460px}.news input{flex:1;background:'+cardBg+';border:1px solid var(--cbd);color:var(--fg);padding:.8rem 1.1rem;border-radius:var(--r);font-family:inherit}'+
-      '.ctaband{text-align:center;background:linear-gradient(135deg,'+hexA(pal.a,0.12)+','+hexA(pal.b,0.12)+');border-radius:var(--r);padding:3.5rem 2rem;max-width:900px}'+
-      'footer{border-top:1px solid '+hexA(pal.a,0.2)+';padding:3.5rem 5% 2rem;position:relative}.fgrid{display:flex;justify-content:space-between;gap:2.5rem;flex-wrap:wrap;max-width:1160px;margin:0 auto 2.5rem}.fcol b{display:block;color:var(--a);font-size:.85rem;margin-bottom:.9rem}.fcol a{display:block;color:var(--fg);opacity:.65;text-decoration:none;font-size:.9rem;padding:.2rem 0}.fcol a:hover{opacity:1;color:var(--a)}.copy{text-align:center;opacity:.45;font-size:.8rem}'+
-      '.totop{position:fixed;bottom:1.4rem;right:1.4rem;width:46px;height:46px;border-radius:50%;background:var(--a);color:'+pal.bg+';border:none;font-size:1.2rem;cursor:pointer;opacity:0;pointer-events:none;transition:.3s;z-index:40}.totop.show{opacity:1;pointer-events:auto}'+
-      '.chatfab{position:fixed;bottom:1.4rem;left:1.4rem;background:var(--a);color:'+pal.bg+';border-radius:999px;padding:.75rem 1.5rem;font-weight:800;font-size:.88rem;cursor:pointer;box-shadow:0 10px 30px '+hexA(pal.a,0.5)+';z-index:40}'+
-      animCSS+
-      '@media(max-width:860px){.nlinks{display:none}.burger{display:flex}.hero-split{grid-template-columns:1fr}.frow{grid-template-columns:1fr}.price.hot{transform:none}}'+
-      '</style></head><body>'+
-      bodyDecor+
-      '<nav id="nv"><span class="brand">'+ty.b+'<i>.</i></span><div class="nlinks"><a href="#feat">خدمات</a>'+(extras[2]?'<a href="#gallery">گالری</a>':'')+(extras[7]?'<a href="#pricing">پلن‌ها</a>':'')+(extras[6]?'<a href="#faq">سوالات</a>':'')+'<a href="#contact">تماس</a></div>'+
-      '<button class="burger" id="bg" aria-label="منو"><span></span><span></span><span></span></button></nav>'+
-      '<div class="mmenu" id="mm"><button class="x" id="mmx">✕</button><a href="#feat">خدمات</a>'+(extras[2]?'<a href="#gallery">گالری</a>':'')+(extras[7]?'<a href="#pricing">پلن‌ها</a>':'')+(extras[6]?'<a href="#faq">سوالات</a>':'')+'<a href="#contact">تماس</a></div>'+
-      '<div class="hero" style="position:relative">'+heroDecor+heroInner+'</div>'+
-      marq+
-      '<section class="sec" id="feat"><h2 data-rv>چرا ما؟</h2><div class="grid3">'+cards+'</div></section>'+
-      gallery+stats+reviews+pricing+faq+form+news+
-      '<footer><div class="fgrid"><div class="fcol"><b>'+ty.b+'.</b><p style="opacity:.6;font-size:.88rem;max-width:280px">طرح اولیه‌ی تولیدشده توسط «معمارِ طلایی» استودیو TEKA — نسخه‌ی نهایی با وسواس دستی ساخته می‌شود.</p></div>'+
-      '<div class="fcol"><b>دسترسی</b><a href="#feat">خدمات</a>'+(extras[2]?'<a href="#gallery">گالری</a>':'')+'<a href="#contact">تماس</a></div>'+
-      '<div class="fcol"><b>تماس</b><a href="mailto:hello@example.com">hello@example.com</a><a href="#">ارومیه، ایران</a></div></div>'+
-      '<div class="copy">© ۱۴۰۵ — همه‌ی حقوق محفوظ است.</div></footer>'+
-      '<button class="totop" id="tt" aria-label="بالا">↑</button>'+chat+
-      '<script>'+
-      'var nv=document.getElementById("nv");'+
-      'window.addEventListener("scroll",function(){nv.classList.toggle("sc",window.scrollY>40);var tt=document.getElementById("tt");tt.classList.toggle("show",window.scrollY>500);});'+
-      'document.getElementById("tt").addEventListener("click",function(){window.scrollTo({top:0,behavior:"smooth"});});'+
-      'var bg=document.getElementById("bg"),mm=document.getElementById("mm");'+
-      'bg.addEventListener("click",function(){mm.style.display="flex";});'+
-      'document.getElementById("mmx").addEventListener("click",function(){mm.style.display="none";});'+
-      'mm.querySelectorAll("a").forEach(function(a){a.addEventListener("click",function(){mm.style.display="none";});});'+
-      'var rvEls=document.querySelectorAll("[data-rv]");'+
-      'if("IntersectionObserver" in window){var io=new IntersectionObserver(function(es){es.forEach(function(en){if(en.isIntersecting){en.target.classList.add("rv");io.unobserve(en.target);}});},{threshold:.12});rvEls.forEach(function(el){io.observe(el);});}else{rvEls.forEach(function(el){el.classList.add("rv");});}'+
-      'var cEls=document.querySelectorAll(".cnt");'+
-      'var cio=new IntersectionObserver(function(es){es.forEach(function(en){if(!en.isIntersecting)return;cio.unobserve(en.target);var el=en.target,tg=+el.getAttribute("data-c"),sf=el.getAttribute("data-suf")||"",t0=Date.now();(function st(){var p=Math.min((Date.now()-t0)/1600,1),e2=1-Math.pow(1-p,4);el.textContent=Math.round(tg*e2)+(sf==="٪"?"٪":sf);if(p<1)requestAnimationFrame(st);})();});},{threshold:.5});'+
-      'cEls.forEach(function(el){cio.observe(el);});'+
-      ((extras[3])?'var tq=["«بهترین تصمیمی بود که برای برندم گرفتم.»","«سرعت و دقتی که باورش سخت است!»","«کیفیت، بالاتر از هر انتظاری.»"],tn=["— مشتری ۱","— مشتری ۲","— مشتری ۳"],ti=0;'+
-      'setInterval(function(){ti=(ti+1)%3;document.getElementById("tstQ").textContent=tq[ti];document.getElementById("tstN").textContent=tn[ti];var ds=document.querySelectorAll(".dots i");ds.forEach(function(d,i2){d.classList.toggle("on",i2===ti);});},3500);':'')+
-      ((extras[6])?'document.querySelectorAll(".faq button").forEach(function(b){b.addEventListener("click",function(){var d=b.nextElementSibling;var open=d.classList.contains("open");document.querySelectorAll(".faq div").forEach(function(x){x.classList.remove("open");});document.querySelectorAll(".faq button").forEach(function(x){x.classList.remove("open");});if(!open){d.classList.add("open");b.classList.add("open");}});});':'')+
-      (an==='cine'?'var pc=document.getElementById("pc");if(pc){var pctx=pc.getContext("2d");var PW,PH;function pf(){PW=pc.width=window.innerWidth;PH=pc.height=window.innerHeight;}pf();window.addEventListener("resize",pf);var pts=[];for(var pp=0;pp<70;pp++){pts.push({x:Math.random()*window.innerWidth,y:Math.random()*window.innerHeight,r:.6+Math.random()*1.6,vx:(Math.random()-.5)*.3,vy:(Math.random()-.5)*.25,o:.15+Math.random()*.4});}(function pdraw(){pctx.clearRect(0,0,PW,PH);for(var i=0;i<pts.length;i++){var p2=pts[i];p2.x+=p2.vx;p2.y+=p2.vy;if(p2.x<0)p2.x=PW;if(p2.x>PW)p2.x=0;if(p2.y<0)p2.y=PH;if(p2.y>PH)p2.y=0;pctx.beginPath();pctx.arc(p2.x,p2.y,p2.r,0,6.3);pctx.fillStyle="'+hexA(pal.a,0.7).replace('0.7','')+'"+(p2.o)+")";pctx.fill();}requestAnimationFrame(pdraw);})();}':'')+
-      '<\/script></body></html>';
-  }
   renderStep();
 }catch(e){}
 })();
 </script>
 
 <script>
-/* بلوک ۴٫۶: موزه‌ی سه‌بعدی BMW — واقع‌گرایانه */
+/* ============================================================
+   بلوک ۴٫۶: فراسویِ طلایی — ۲۶٬۰۰۰ ذره · ۵ جهان · مورف گردابی
+   نسخه‌ی پایدار: همه‌چیز داخل try · بدون متغیر سراسری · fallback کامل
+============================================================ */
 (function(){
 var T=window.TEKA||{};
-var SFX=(T.SFX)||{tone:function(){}};
+var SFX=(T.SFX)||{tone:function(){},whoosh:function(){}};
+function clampU(v,a,b){return Math.min(b,Math.max(a,v));}
+
+/* ---------- داده‌های خالص (بدون THREE — امن) ---------- */
+var N=26000;
+var COL_GOLD=[0.88,0.68,0.32],COL_HI=[1,0.87,0.52],COL_BLUE=[0.35,0.55,0.95],COL_VIO=[0.62,0.42,0.95],COL_RED=[0.92,0.36,0.3];
+var MONO=[
+  [[0.05,0.42],[0.95,0.46],[0.93,0.56],[0.07,0.54]],
+  [[0.14,0.60],[0.45,0.60],[0.58,1.0],[0.40,1.0],[0.33,0.72],[0.14,0.72]],
+  [[0.86,0.60],[0.55,0.60],[0.42,1.0],[0.60,1.0],[0.67,0.72],[0.86,0.72]]
+];
+function mixC(a,b,t){return [a[0]+(b[0]-a[0])*t,a[1]+(b[1]-a[1])*t,a[2]+(b[2]-a[2])*t];}
+function jit(k){return (Math.random()-0.5)*k;}
+function inPoly(x,y,p){
+  var ins=false;
+  for(var i=0,j=p.length-1;i<p.length;j=i++){
+    if((p[i][1]>y)!==(p[j][1]>y)&&x<(p[j][0]-p[i][0])*(y-p[i][1])/(p[j][1]-p[i][1])+p[i][0])ins=!ins;
+  }
+  return ins;
+}
+function genGalaxy(pos,col){
+  var i,arm,r,ang,x,z,y,t,c,b;
+  for(i=0;i<N;i++){
+    arm=i%3;
+    r=Math.pow(Math.random(),0.55)*3.1+0.15;
+    ang=r*1.9+arm*(Math.PI*2/3)+(Math.random()-0.5)*(0.55-r*0.12);
+    x=Math.cos(ang)*r+jit(0.2);
+    z=Math.sin(ang)*r+jit(0.2);
+    y=jit(0.34)*(1.2-r/3.4);
+    pos[i*3]=x;pos[i*3+1]=y;pos[i*3+2]=z;
+    t=Math.min(r/3.3,1);
+    c=(arm===0)?mixC(COL_GOLD,COL_BLUE,t*0.85):((arm===1)?mixC(COL_GOLD,COL_VIO,t*0.85):mixC(COL_GOLD,COL_HI,t*0.6));
+    b=0.55+Math.random()*0.45;
+    col[i*3]=c[0]*b;col[i*3+1]=c[1]*b;col[i*3+2]=c[2]*b;
+  }
+}
+function genMono(pos,col){
+  var i,x,y,ok,tr,s,b,c;
+  for(i=0;i<N;i++){
+    x=Math.random();y=Math.random();ok=false;tr=0;
+    while(!ok&&tr<40){
+      for(s=0;s<3;s++){if(inPoly(x,y,MONO[s])){ok=true;break;}}
+      if(!ok){x=Math.random();y=Math.random();tr++;}
+    }
+    if(!ok){x=0.5;y=0.75;}
+    pos[i*3]=(x-0.5)*4.6;
+    pos[i*3+1]=(0.75-y)*4.6;
+    pos[i*3+2]=jit(0.14);
+    c=(Math.random()<0.5)?COL_HI:COL_GOLD;
+    b=0.6+Math.random()*0.4;
+    col[i*3]=c[0]*b;col[i*3+1]=c[1]*b;col[i*3+2]=c[2]*b;
+  }
+}
+function genDNA(pos,col){
+  var i,f,t,y,mode,x,z,c,b,u;
+  for(i=0;i<N;i++){
+    f=i/N;
+    t=f*Math.PI*7;
+    y=(f-0.5)*4.6;
+    mode=i%14;
+    if(mode<12){
+      x=Math.cos(t+((mode<6)?0:Math.PI))*1.05+jit(0.06);
+      z=Math.sin(t+((mode<6)?0:Math.PI))*1.05+jit(0.06);
+      c=(mode<6)?COL_GOLD:COL_BLUE;
+    }else{
+      u=Math.random()*2-1;
+      x=Math.cos(t)*1.05*u;
+      z=Math.sin(t)*1.05*u;
+      c=COL_HI;
+    }
+    pos[i*3]=x;pos[i*3+1]=y+jit(0.02);pos[i*3+2]=z;
+    b=0.55+Math.random()*0.45;
+    col[i*3]=c[0]*b;col[i*3+1]=c[1]*b;col[i*3+2]=c[2]*b;
+  }
+}
+function genPlanet(pos,col){
+  var i,u,ph,rr,tilt,ct2,st2,a2,rr2,rx0,rz0,ry0,c,b;
+  tilt=0.42;ct2=Math.cos(tilt);st2=Math.sin(tilt);
+  for(i=0;i<N;i++){
+    if(Math.random()>0.38){
+      u=Math.random()*2-1;
+      ph=Math.random()*Math.PI*2;
+      rr=Math.sqrt(1-u*u)*1.5;
+      pos[i*3]=Math.cos(ph)*rr+jit(0.03);
+      pos[i*3+1]=u*1.5+jit(0.03);
+      pos[i*3+2]=Math.sin(ph)*rr+jit(0.03);
+      c=mixC(COL_GOLD,COL_HI,Math.random()*0.4);
+    }else{
+      a2=Math.random()*Math.PI*2;
+      rr2=2.05+Math.pow(Math.random(),2)*0.95;
+      rx0=Math.cos(a2)*rr2;
+      rz0=Math.sin(a2)*rr2;
+      ry0=jit(0.05);
+      pos[i*3]=rx0;
+      pos[i*3+1]=ry0*ct2-rz0*st2;
+      pos[i*3+2]=ry0*st2+rz0*ct2;
+      c=(Math.random()<0.6)?COL_GOLD:COL_VIO;
+    }
+    b=0.5+Math.random()*0.5;
+    col[i*3]=c[0]*b;col[i*3+1]=c[1]*b;col[i*3+2]=c[2]*b;
+  }
+}
+function genNebula(pos,col){
+  var i,r,a,x,z,y,cl,c,b;
+  for(i=0;i<N;i++){
+    r=Math.pow(Math.random(),0.6)*2.6;
+    a=Math.random()*Math.PI*2;
+    x=Math.cos(a)*r+jit(0.4);
+    z=Math.sin(a)*r*0.7+jit(0.4);
+    y=jit(1.5)*Math.exp(-r*0.35);
+    pos[i*3]=x;pos[i*3+1]=y;pos[i*3+2]=z;
+    cl=Math.random();
+    c=(cl<0.35)?COL_GOLD:((cl<0.6)?COL_VIO:((cl<0.85)?COL_RED:COL_BLUE));
+    b=0.35+Math.random()*0.65;
+    col[i*3]=c[0]*b;col[i*3+1]=c[1]*b;col[i*3+2]=c[2]*b;
+  }
+}
+function mk(g){
+  var p=new Float32Array(N*3),c=new Float32Array(N*3);
+  g(p,c);
+  return {p:p,c:c};
+}
+var SHAPES=[mk(genGalaxy),mk(genMono),mk(genDNA),mk(genPlanet),mk(genNebula)];
+var CAPS=[
+  '<b>کهکشان مارپیچی:</b> ۲۶ هزار ستاره در سه بازوی مارپیچی — طلایی در مرکز، آبی و بنفش در لبه‌ها؛ مثل کهکشان راه شیری!',
+  '<b>نشان تِکا:</b> همین ذرات، مونوگرام طلایی برند را می‌سازند — امضایی که از ۲۶ هزار ستاره بافته شده!',
+  '<b>رشته‌ی DNA:</b> مارپیچ دوگانه‌ی حیات؛ دو رشته‌ی طلایی و آبی با پله‌های درخشان — نقشه‌ی ساختمان همه‌ی موجودات زنده.',
+  '<b>سیاره‌ی حلقه‌دار:</b> گویی طلایی با حلقه‌ای از غبار ستاره‌ای — تماشای زحل از نزدیک!',
+  '<b>سحابی:</b> ابر تولد ستاره‌ها؛ جایی که گاز و غبار با آتش کیهانی می‌درخشند — طلایی، بنفش و سرخ.'
+];
+
+/* ---------- وضعیت ---------- */
+var cv=document.getElementById('uniCanvas');
+var capEl=document.getElementById('uniCap');
+var fallbackEl=document.getElementById('uniFallback');
+var shapeBtns=document.querySelectorAll('#universe .uni-shape');
+if(!cv||!capEl){return;}
+
+var active=false,activeIdx=0,morphT0=-1,MORPH=2400;
+var targetRot=0.5,curRot=0.5,dragging=false,lastX=0;
+var mouseX=0,mouseY=0;
+var curP=new Float32Array(N*3),curC=new Float32Array(N*3);
+var fromP=new Float32Array(N*3),fromC=new Float32Array(N*3);
+var DEL=new Float32Array(N);
+var di;
+for(di=0;di<N;di++){DEL[di]=Math.random()*0.45;}
+var renderer=null,scene=null,camera=null,geo=null,group=null;
+
+function showFallback(msg){
+  if(fallbackEl){
+    fallbackEl.style.display='block';
+    if(msg)fallbackEl.textContent=msg;
+  }
+  for(var i=0;i<shapeBtns.length;i++){
+    shapeBtns[i].disabled=true;
+    shapeBtns[i].style.opacity='0.4';
+    shapeBtns[i].style.cursor='not-allowed';
+  }
+}
+function goShape(idx){
+  if(idx===activeIdx){return;}
+  fromP.set(curP);
+  fromC.set(curC);
+  activeIdx=idx;
+  morphT0=performance.now();
+  capEl.innerHTML=CAPS[idx];
+  SFX.whoosh();
+}
+function bindUI(){
+  for(var i=0;i<shapeBtns.length;i++){
+    (function(b){
+      b.addEventListener('click',function(){
+        for(var x=0;x<shapeBtns.length;x++){shapeBtns[x].classList.remove('on');}
+        b.classList.add('on');
+        goShape(parseInt(b.getAttribute('data-s'),10)||0);
+      });
+    })(shapeBtns[i]);
+  }
+}
+function fit(){
+  if(!renderer||!camera){return;}
+  var w=cv.clientWidth||620,h=cv.clientHeight||480;
+  if(w<10||h<10){return;}
+  renderer.setSize(w,h,false);
+  camera.aspect=w/h;
+  camera.updateProjectionMatrix();
+}
+function frame(now){
+  if(!active){return;}
+  try{
+    var i,i3,loc,swl,ca,sa,rx,rz;
+    if(morphT0>=0){
+      var p=clampU((now-morphT0)/MORPH,0,1);
+      var to=SHAPES[activeIdx];
+      for(i=0;i<N;i++){
+        loc=clampU(p*1.45-DEL[i],0,1);
+        loc=loc*loc*(3-2*loc);
+        i3=i*3;
+        var x=fromP[i3]+(to.p[i3]-fromP[i3])*loc;
+        var y=fromP[i3+1]+(to.p[i3+1]-fromP[i3+1])*loc;
+        var z=fromP[i3+2]+(to.p[i3+2]-fromP[i3+2])*loc;
+        swl=Math.sin(loc*Math.PI)*0.8;
+        ca=Math.cos(swl);sa=Math.sin(swl);
+        rx=x*ca+z*sa;
+        rz=-x*sa+z*ca;
+        curP[i3]=rx;curP[i3+1]=y;curP[i3+2]=rz;
+        curC[i3]=fromC[i3]+(to.c[i3]-fromC[i3])*loc;
+        curC[i3+1]=fromC[i3+1]+(to.c[i3+1]-fromC[i3+1])*loc;
+        curC[i3+2]=fromC[i3+2]+(to.c[i3+2]-fromC[i3+2])*loc;
+      }
+      geo.attributes.position.needsUpdate=true;
+      geo.attributes.color.needsUpdate=true;
+      if(p>=1){morphT0=-1;}
+    }
+    if(!dragging){targetRot+=0.0016;}
+    curRot+=(targetRot-curRot)*0.07;
+    group.rotation.y=curRot;
+    group.rotation.x=0.1+Math.sin(now*0.0004)*0.05;
+    camera.position.x+=(mouseX*0.55-camera.position.x)*0.04;
+    camera.position.y+=(1.25-mouseY*0.45-camera.position.y)*0.04;
+    camera.lookAt(0,0,0);
+    renderer.render(scene,camera);
+  }catch(e){}
+  requestAnimationFrame(frame);
+}
+
+/* ---------- راه‌اندازی (همه‌چیز داخل try) ---------- */
 try{
-  var cv=document.getElementById('bmwCanvas');
-  var capEl=document.getElementById('bmwCap');
-  if(!cv)return;
   if(typeof THREE==='undefined'){
-    var fb=document.getElementById('bmwFallback');
-    if(fb)fb.style.display='block';
+    showFallback('موتور سه‌بعدی (Three.js) بارگذاری نشد — اینترنت را وصل کن و رفرش بزن تا جهان روشن شود!');
     return;
   }
-  var renderer=new THREE.WebGLRenderer({canvas:cv,antialias:true,alpha:true});
+  renderer=new THREE.WebGLRenderer({canvas:cv,antialias:false,alpha:true,powerPreference:'high-performance'});
+  if(!renderer){throw new Error('no webgl');}
   renderer.setPixelRatio(Math.min(window.devicePixelRatio||1,2));
-  renderer.shadowMap.enabled=true;
-  renderer.shadowMap.type=THREE.PCFSoftShadowMap;
-  renderer.outputEncoding=THREE.sRGBEncoding;
-  renderer.toneMapping=THREE.ACESFilmicToneMapping;
-  renderer.toneMappingExposure=1.12;
-  var scene=new THREE.Scene();
-  scene.fog=new THREE.Fog(0x0B0805,9,26);
   renderer.setClearColor(0x0B0805,1);
-  var camera=new THREE.PerspectiveCamera(36,1,0.1,80);
-  camera.position.set(6.6,2.5,6.6);
-  camera.lookAt(0,0.75,0);
-  /* نورپردازی سینمایی */
-  scene.add(new THREE.AmbientLight(0x2E2418,0.85));
-  scene.add(new THREE.HemisphereLight(0x403425,0x0A0705,0.5));
-  var key=new THREE.SpotLight(0xFFF1D6,1.7,45,Math.PI/4.4,0.45);
-  key.position.set(5.5,9.5,4.5);
-  key.castShadow=true;
-  key.shadow.mapSize.set(2048,2048);
-  key.shadow.bias=-0.0002;
-  scene.add(key);
-  var rimGold=new THREE.PointLight(0xC9A24B,1.9,22);
-  rimGold.position.set(-5.5,3.2,-4.5);
-  scene.add(rimGold);
-  var coolFill=new THREE.PointLight(0x6FA0D8,0.4,20);
-  coolFill.position.set(4.5,1.8,5);
-  scene.add(coolFill);
-  var frontWarm=new THREE.PointLight(0xFFD9A0,0.35,14);
-  frontWarm.position.set(0,0.8,6.5);
-  scene.add(frontWarm);
-  /* زمین بازتابنده + سکو */
-  var ground=new THREE.Mesh(new THREE.CircleGeometry(16,56),new THREE.MeshStandardMaterial({color:0x0E0A07,metalness:0.72,roughness:0.34}));
-  ground.rotation.x=-Math.PI/2;
-  ground.receiveShadow=true;
-  scene.add(ground);
+  renderer.outputEncoding=THREE.sRGBEncoding;
+  scene=new THREE.Scene();
+  camera=new THREE.PerspectiveCamera(50,1,0.1,60);
+  camera.position.set(0,1.25,6.4);
+  camera.lookAt(0,0,0);
+  geo=new THREE.BufferGeometry();
+  geo.setAttribute('position',new THREE.BufferAttribute(curP,3));
+  geo.setAttribute('color',new THREE.BufferAttribute(curC,3));
+  var mat=new THREE.PointsMaterial({size:0.045,vertexColors:true,transparent:true,opacity:0.95,blending:THREE.AdditiveBlending,depthWrite:false,sizeAttenuation:true});
+  group=new THREE.Group();
+  group.add(new THREE.Points(geo,mat));
   var glowTex=(function(){
-    var c=document.createElement('canvas');c.width=c.height=256;
+    var c=document.createElement('canvas');c.width=128;c.height=128;
     var g=c.getContext('2d');
-    var gr=g.createRadialGradient(128,128,10,128,128,128);
-    gr.addColorStop(0,'rgba(201,162,75,0.55)');
-    gr.addColorStop(0.5,'rgba(201,162,75,0.14)');
+    var gr=g.createRadialGradient(64,64,4,64,64,64);
+    gr.addColorStop(0,'rgba(233,200,118,0.45)');
+    gr.addColorStop(0.5,'rgba(201,162,75,0.12)');
     gr.addColorStop(1,'rgba(201,162,75,0)');
-    g.fillStyle=gr;g.fillRect(0,0,256,256);
+    g.fillStyle=gr;g.fillRect(0,0,128,128);
     return new THREE.CanvasTexture(c);
   })();
-  var glow=new THREE.Mesh(new THREE.PlaneGeometry(9,9),new THREE.MeshBasicMaterial({map:glowTex,transparent:true,depthWrite:false}));
-  glow.rotation.x=-Math.PI/2;
-  glow.position.y=0.18;
-  scene.add(glow);
-  var platform=new THREE.Mesh(new THREE.CylinderGeometry(3.9,4.05,0.18,56),new THREE.MeshStandardMaterial({color:0x18120A,metalness:0.8,roughness:0.28}));
-  platform.position.y=0.09;
-  platform.receiveShadow=true;
-  scene.add(platform);
-  var ring=new THREE.Mesh(new THREE.TorusGeometry(3.92,0.04,14,80),new THREE.MeshStandardMaterial({color:0xC9A24B,emissive:0x9A7A28,emissiveIntensity:0.65,metalness:0.95,roughness:0.2}));
-  ring.rotation.x=-Math.PI/2;
-  ring.position.y=0.185;
-  scene.add(ring);
-  var ring2=new THREE.Mesh(new THREE.TorusGeometry(4.6,0.018,10,80),new THREE.MeshStandardMaterial({color:0x8A6A1E,emissive:0x5A4312,emissiveIntensity:0.4,metalness:0.9,roughness:0.3}));
-  ring2.rotation.x=-Math.PI/2;
-  ring2.position.y=0.02;
-  scene.add(ring2);
-  /* ذرات طلایی معلق */
-  var dustGeo=new THREE.BufferGeometry();
-  var dPos=new Float32Array(240*3);
-  for(var dp=0;dp<240;dp++){
-    dPos[dp*3]=(Math.random()-0.5)*16;
-    dPos[dp*3+1]=Math.random()*5+0.3;
-    dPos[dp*3+2]=(Math.random()-0.5)*16;
-  }
-  dustGeo.setAttribute('position',new THREE.BufferAttribute(dPos,3));
-  var dust=new THREE.Points(dustGeo,new THREE.PointsMaterial({color:0xC9A24B,size:0.045,transparent:true,opacity:0.65}));
-  scene.add(dust);
-
-  var CAPS={
-    m507:'<b>BMW 507 — ۱۹۵۶:</b> فقط ۲۵۲ عدد ساخته شد؛ جلوپنجره‌ی کلیوی، سپرهای کروم با اوررایدر و لاستیک‌های وایت‌وال — ماشین الویس پریسلی!',
-    m2002:'<b>BMW 2002 — ۱۹۶۸:</b> پدر تمام BMWهای اسپرت؛ ماشینی که کلاس «سدان ورزشی» را تعریف کرد و برند را نجات داد.',
-    e30:'<b>BMW E30 M3 — ۱۹۸۸:</b> پرافتخارترین خودروی مسابقه‌ای تاریخ؛ با نوارهای سه‌رنگ M، اسپویلر عقب و دیفیوزر — قهرمان تورینگ!'
-  };
-  function buildCar(type){
-    var C={
-      m507:{paint:0xEFE5CE,accent:0xC9A24B,len:4.75,wid:1.84,floor:0.36,belt:0.99,roof:1.5,cabF:0.55,cabR:-1.0,wr:0.47,wxF:1.5,wxR:-1.48,track:0.74,whitewall:true,dish:true,spokes:0,stripe:false,spoiler:false,louver:true},
-      m2002:{paint:0xE8641E,accent:0xC9A24B,len:4.15,wid:1.64,floor:0.37,belt:1.0,roof:1.6,cabF:0.78,cabR:-0.62,wr:0.42,wxF:1.26,wxR:-1.24,track:0.70,whitewall:false,dish:false,spokes:0,stripe:false,spoiler:false,louver:false},
-      e30:{paint:0xD8262C,accent:0xC9A24B,len:4.3,wid:1.68,floor:0.37,belt:1.0,roof:1.62,cabF:0.82,cabR:-0.58,wr:0.43,wxF:1.32,wxR:-1.28,track:0.72,whitewall:false,dish:false,spokes:5,stripe:true,spoiler:true,louver:false}
-    }[type];
-    var g=new THREE.Group();
-    var paint=new THREE.MeshPhysicalMaterial({color:C.paint,metalness:0.55,roughness:0.3,clearcoat:1,clearcoatRoughness:0.08});
-    var chrome=new THREE.MeshStandardMaterial({color:0xF2EEE4,metalness:1,roughness:0.1});
-    var glass=new THREE.MeshPhysicalMaterial({color:0x0B1210,metalness:0.9,roughness:0.05,transparent:true,opacity:0.9});
-    var tire=new THREE.MeshStandardMaterial({color:0x14110D,roughness:0.95});
-    var white=new THREE.MeshStandardMaterial({color:0xF0ECE0,roughness:0.55});
-    var dark=new THREE.MeshStandardMaterial({color:0x1A140C,roughness:0.65});
-    var goldM=new THREE.MeshStandardMaterial({color:0xC9A24B,metalness:0.95,roughness:0.25});
-    var hl=new THREE.MeshStandardMaterial({color:0xFFF7DE,emissive:0xFFE2A0,emissiveIntensity:1,roughness:0.15});
-    var tl=new THREE.MeshStandardMaterial({color:0xE03838,emissive:0xB01E1E,emissiveIntensity:0.85});
-    function add(m,shadow){m.castShadow=shadow!==false;m.receiveShadow=true;g.add(m);return m;}
-    var L=C.len/2,fy=C.floor;
-    /* --- بدنه از پروفیل واقعی --- */
-    var wr2=C.wr+0.09;
-    function archPath(s,cx){
-      var a=Math.asin((fy-C.wr)/wr2);
-      s.lineTo(cx-Math.cos(a)*wr2,fy);
-      s.absarc(cx,C.wr,wr2,Math.PI-a,a,true);
-    }
-    var s=new THREE.Shape();
-    s.moveTo(L,fy+0.1);
-    s.lineTo(L,C.belt-0.16);
-    s.quadraticCurveTo(L,C.belt,L-0.2,C.belt);
-    s.lineTo(C.cabF+0.05,C.belt);
-    s.lineTo(C.cabF-0.55,C.roof);
-    s.lineTo(C.cabR+0.5,C.roof);
-    s.quadraticCurveTo(C.cabR-0.15,C.roof-0.02,C.cabR-0.5,C.belt-0.05);
-    s.lineTo(-L+0.2,C.belt-0.05);
-    s.quadraticCurveTo(-L,C.belt-0.05,-L,C.belt-0.18);
-    s.lineTo(-L,fy+0.1);
-    s.lineTo(-L,fy);
-    archPath(s,C.wxR);
-    archPath(s,C.wxF);
-    s.lineTo(L,fy);
-    s.lineTo(L,fy+0.1);
-    var depth=C.wid-0.16;
-    var geo=new THREE.ExtrudeGeometry(s,{depth:depth,bevelEnabled:true,bevelThickness:0.08,bevelSize:0.08,bevelSegments:5,curveSegments:26});
-    geo.translate(0,0,-depth/2);
-    add(new THREE.Mesh(geo,paint));
-    /* نوار شیشه دور کابین */
-    var bandLen=(C.cabF-0.35)-(C.cabR-0.4);
-    var bandH=(C.roof-C.belt)*0.5;
-    var band=add(new THREE.Mesh(new THREE.BoxGeometry(bandLen,bandH,C.wid-0.06),glass),false);
-    band.position.set((C.cabF+C.cabR)/2-0.1,C.belt+bandH/2+0.06,0);
-    /* ستون B */
-    add(new THREE.Mesh(new THREE.BoxGeometry(0.06,bandH+0.12,C.wid-0.02),paint)).position.set((C.cabF+C.cabR)/2-0.35,C.belt+bandH/2+0.06,0);
-    /* صندلی‌ها پشت شیشه */
-    var seat1=add(new THREE.Mesh(new THREE.BoxGeometry(0.34,0.42,0.4),dark),false);
-    seat1.position.set((C.cabF+C.cabR)/2-0.15,C.belt+0.12,0.3);
-    var seat2=seat1.clone();seat2.position.z=-0.3;g.add(seat2);
-    var dash=add(new THREE.Mesh(new THREE.BoxGeometry(0.16,0.14,C.wid-0.3),dark),false);
-    dash.position.set(C.cabF-0.3,C.belt+0.14,0);
-    /* خط کروم زیر شیشه */
-    var beltLen=C.len-0.75;
-    var bl1=add(new THREE.Mesh(new THREE.BoxGeometry(beltLen,0.035,0.03),chrome),false);
-    bl1.position.set((C.cabR+C.cabF)/2-0.35,C.belt-0.01,C.wid/2+0.055);
-    var bl2=bl1.clone();bl2.position.z=-C.wid/2-0.055;g.add(bl2);
-    /* گلگیرهای برجسته کلاسیک */
-    [[C.wxF,1],[C.wxF,-1],[C.wxR,1],[C.wxR,-1]].forEach(function(f){
-      var fen=add(new THREE.Mesh(new THREE.TorusGeometry(wr2+0.02,0.035,10,26,Math.PI),paint));
-      fen.position.set(f[0],C.wr,f[1]*(C.wid/2+0.01));
-    });
-    /* --- چرخ‌های واقعی --- */
-    function buildWheel(){
-      var wg=new THREE.Group();
-      var t1=new THREE.Mesh(new THREE.CylinderGeometry(C.wr,C.wr,0.3,32),tire);
-      t1.rotation.x=Math.PI/2;t1.castShadow=true;wg.add(t1);
-      if(C.whitewall){
-        var ww=new THREE.Mesh(new THREE.TorusGeometry(C.wr*0.66,0.05,10,36),white);
-        ww.position.z=0.135;wg.add(ww);
-        var ww2=ww.clone();ww2.position.z=-0.135;wg.add(ww2);
-      }
-      var rimR=C.whitewall?C.wr*0.5:C.wr*0.6;
-      var rim=new THREE.Mesh(new THREE.CylinderGeometry(rimR,rimR*0.92,0.28,28),chrome);
-      rim.rotation.x=Math.PI/2;wg.add(rim);
-      if(C.spokes>0){
-        for(var sp=0;sp<C.spokes;sp++){
-          var spk=new THREE.Mesh(new THREE.BoxGeometry(rimR*1.9,0.045,0.04),chrome);
-          spk.rotation.z=(sp/C.spokes)*Math.PI;
-          spk.position.z=0.14;wg.add(spk);
-        }
-      }
-      var hub=new THREE.Mesh(new THREE.CylinderGeometry(0.09,0.09,0.34,16),C.dish?goldM:chrome);
-      hub.rotation.x=Math.PI/2;wg.add(hub);
-      return wg;
-    }
-    [[C.wxF,C.track],[C.wxF,-C.track],[C.wxR,C.track],[C.wxR,-C.track]].forEach(function(w,i){
-      var wh=buildWheel();
-      wh.position.set(w[0],C.wr,w[1]);
-      if(w[1]<0)wh.rotation.y=Math.PI;
-      if(i<2){wh.userData.spin=true;}
-      g.add(wh);
-    });
-    /* جلوپنجره‌ی کلیوی با تیغه */
-    [[0.2],[-0.2]].forEach(function(kz){
-      var kz0=kz[0];
-      add(new THREE.Mesh(new THREE.BoxGeometry(0.04,0.32,0.3),chrome)).position.set(L-0.03,C.belt-0.14,kz0);
-      add(new THREE.Mesh(new THREE.BoxGeometry(0.03,0.26,0.24),dark)).position.set(L-0.01,C.belt-0.14,kz0);
-      for(var sl=0;sl<5;sl++){
-        add(new THREE.Mesh(new THREE.BoxGeometry(0.025,0.24,0.03),chrome),false).position.set(L-0.005,C.belt-0.14,kz0-0.09+sl*0.045);
-      }
-    });
-    /* چراغ‌های گرد با قاب کروم */
-    [[0.62],[-0.62]].forEach(function(hz){
-      var bz=new THREE.Mesh(new THREE.TorusGeometry(0.145,0.03,12,22),chrome);
-      bz.rotation.y=Math.PI/2;
-      bz.position.set(L-0.04,C.belt-0.1,hz[0]);
-      g.add(bz);
-      var lens=new THREE.Mesh(new THREE.SphereGeometry(0.13,20,14),hl);
-      lens.scale.x=0.55;
-      lens.position.set(L-0.03,C.belt-0.1,hz[0]);
-      g.add(lens);
-    });
-    /* چراغ عقب */
-    [[0.55],[-0.55]].forEach(function(tz){
-      add(new THREE.Mesh(new THREE.BoxGeometry(0.05,0.13,0.32),tl)).position.set(-L+0.02,C.belt-0.12,tz[0]);
-    });
-    /* سپر کروم با اوررایدر */
-    [1,-1].forEach(function(sd){
-      var bmp=new THREE.Mesh(new THREE.CylinderGeometry(0.055,0.055,C.wid+0.14,16),chrome);
-      bmp.rotation.x=Math.PI/2;
-      bmp.position.set(sd*(L+0.03),fy+0.26,0);
-      g.add(bmp);
-      [0.42,-0.42].forEach(function(oz){
-        var ov=new THREE.Mesh(new THREE.CylinderGeometry(0.08,0.08,0.09,14),chrome);
-        ov.rotation.x=Math.PI/2;
-        ov.position.set(sd*(L+0.06),fy+0.26,oz);
-        g.add(ov);
-      });
-    });
-    /* اگزوز دوقلو */
-    [0.3,-0.3].forEach(function(ez){
-      var ex=new THREE.Mesh(new THREE.CylinderGeometry(0.045,0.045,0.14,14),chrome);
-      ex.rotation.z=Math.PI/2;
-      ex.position.set(-L-0.02,fy+0.12,ez);
-      g.add(ex);
-    });
-    /* پلاک */
-    add(new THREE.Mesh(new THREE.BoxGeometry(0.02,0.13,0.44),new THREE.MeshStandardMaterial({color:0xF5F2E8,roughness:0.5})),false).position.set(-L-0.01,fy+0.42,0);
-    /* دستگیره‌ها و آینه */
-    [1,-1].forEach(function(sd){
-      add(new THREE.Mesh(new THREE.BoxGeometry(0.14,0.03,0.02),chrome),false).position.set((C.cabF+C.cabR)/2-0.1,C.belt-0.12,sd*(C.wid/2+0.075));
-    });
-    add(new THREE.Mesh(new THREE.BoxGeometry(0.05,0.09,0.03),chrome)).position.set(C.cabF-0.25,C.belt+0.12,C.wid/2+0.06);
-    /* نوارهای M برای E30 */
-    if(C.stripe){
-      var mcols=[0x6CB4E4,0x1C2E7A,0xC1272D];
-      for(var ms=0;ms<3;ms++){
-        var mm1=add(new THREE.Mesh(new THREE.BoxGeometry(C.len-1.2,0.045,0.015),new THREE.MeshStandardMaterial({color:mcols[ms],roughness:0.5})),false);
-        mm1.position.set(0,C.belt+0.05+ms*0.05,C.wid/2+0.09);
-        var mm2=mm1.clone();mm2.position.z=-C.wid/2-0.09;g.add(mm2);
-        var mm3=mm1.clone();mm3.position.set(-C.cabR-0.15,C.belt+0.05+ms*0.05,0);mm3.rotation.y=Math.PI/2;mm3.scale.set(C.wid/ (C.len-1.2),1,1);g.add(mm3);
-      }
-      /* اسپویلر و دیفیوزر */
-      add(new THREE.Mesh(new THREE.BoxGeometry(0.24,0.04,C.wid-0.2),paint)).position.set(-L+0.14,C.belt+0.06,0);
-      add(new THREE.Mesh(new THREE.BoxGeometry(0.14,0.1,C.wid-0.5),dark)).position.set(-L+0.06,fy+0.14,0);
-    }
-    /* دریچه‌ی کاپوت 507 */
-    if(C.louver){
-      for(var lv=0;lv<4;lv++){
-        add(new THREE.Mesh(new THREE.BoxGeometry(0.2,0.015,0.5),dark),false).position.set(1.1+lv*0.28,C.belt+0.015,0);
-      }
-    }
-    return g;
-  }
-  var carGroup=null,targetRot=0.6,curRot=0.6,dragging=false,lastX=0,active=false,spinT=0;
-  function setCar(type){
-    if(carGroup)scene.remove(carGroup);
-    carGroup=buildCar(type);
-    carGroup.position.y=0.18;
-    scene.add(carGroup);
-  }
-  setCar('m507');
+  var glowSprite=new THREE.Sprite(new THREE.SpriteMaterial({map:glowTex,transparent:true,opacity:0.35,depthWrite:false,blending:THREE.AdditiveBlending}));
+  glowSprite.scale.set(4.8,4.8,1);
+  group.add(glowSprite);
+  scene.add(group);
+  curP.set(SHAPES[0].p);
+  curC.set(SHAPES[0].c);
+  geo.attributes.position.needsUpdate=true;
+  geo.attributes.color.needsUpdate=true;
+  bindUI();
   cv.addEventListener('pointerdown',function(e){
     dragging=true;lastX=e.clientX;
     try{cv.setPointerCapture(e.pointerId);}catch(err){}
   });
   cv.addEventListener('pointermove',function(e){
-    if(!dragging)return;
-    targetRot+=(e.clientX-lastX)*0.01;
-    lastX=e.clientX;
+    var r=cv.getBoundingClientRect();
+    if(r.width>0&&r.height>0){
+      mouseX=((e.clientX-r.left)/r.width-0.5)*2;
+      mouseY=((e.clientY-r.top)/r.height-0.5)*2;
+    }
+    if(dragging){
+      targetRot+=(e.clientX-lastX)*0.01;
+      lastX=e.clientX;
+    }
   });
   cv.addEventListener('pointerup',function(){dragging=false;});
   cv.addEventListener('pointercancel',function(){dragging=false;});
-  var modelBtns=document.querySelectorAll('.bmw-model');
-  for(var mb=0;mb<modelBtns.length;mb++){
-    (function(b){
-      b.addEventListener('click',function(){
-        var all=document.querySelectorAll('.bmw-model');
-        for(var x=0;x<all.length;x++)all[x].classList.remove('on');
-        b.classList.add('on');
-        var c=b.getAttribute('data-c');
-        setCar(c);
-        if(capEl)capEl.innerHTML=CAPS[c];
-        SFX.whoosh();
-      });
-    })(modelBtns[mb]);
-  }
-  function fit(){
-    var w=cv.clientWidth||620,h=cv.clientHeight||460;
-    renderer.setSize(w,h,false);
-    camera.aspect=w/h;
-    camera.updateProjectionMatrix();
-  }
-  fit();
+  cv.addEventListener('pointerleave',function(){dragging=false;mouseX=0;mouseY=0;});
   window.addEventListener('resize',fit);
-  function frame(){
-    if(!active)return;
-    try{
-      if(!dragging)targetRot+=0.0032;
-      curRot+=(targetRot-curRot)*0.08;
-      if(carGroup)carGroup.rotation.y=curRot;
-      rimGold.position.x=Math.sin(curRot*0.7)*5.5;
-      rimGold.position.z=-Math.cos(curRot*0.7)*5.5;
-      dust.rotation.y+=0.0004;
-      renderer.render(scene,camera);
-    }catch(e){}
-    requestAnimationFrame(frame);
-  }
+  fit();
   setInterval(function(){
     var r=cv.getBoundingClientRect();
     var want=r.bottom>0&&r.top<(window.innerHeight||800);
-    if(want&&!active){active=true;requestAnimationFrame(frame);}
-    if(!want)active=false;
+    if(want&&!active){active=true;fit();requestAnimationFrame(frame);}
+    if(!want){active=false;}
   },600);
 }catch(e){
-  var fb2=document.getElementById('bmwFallback');
-  if(fb2)fb2.style.display='block';
+  showFallback('مرورگرت از WebGL پشتیبانی نمی‌کند — با کروم یا فایرفاکس به‌روز امتحان کن!');
 }
 })();
 </script>
@@ -3129,11 +3134,11 @@ var KB=[
  a:'شطرنج حافظه‌ی کاری و برنامه‌ریزی رو تقویت می‌کنه.',
  m:['مغز ۸۶ میلیارد نورون داره و ۲۰٪ انرژی بدن رو مصرف می‌کنه!']},
 {k:['معمار طلایی','معمار','طراح خودکار'],t:'معمارِ طلایی',
- a:'معمارِ طلایی، هوش مصنوعی طراح تِکاست: ۷ سؤال می‌پرسه (نوع، رنگ، انیمیشن، سبک، فونت، چیدمان، امکانات) و از بیش از ۳۹ میلیون ترکیب، طرح اولیه‌ی زنده‌ی سایتت رو می‌سازه!',
+ a:'معمارِ طلایی، هوش مصنوعی طراح تِکاست: ۷ سؤال می‌پرسه (نوع، رنگ از ۲۰ پالت، انیمیشن، سبک، فونت، چیدمان، امکانات) و از بیش از ۲۴۵ میلیون ترکیب، طرح اولیه‌ی زنده‌ی سایتت رو می‌سازه!',
  m:['یادت باشه: این ابزار فقط برای درک سلیقه‌ت و بهتر شدن خدماته — حتی یک صدم قدرت واقعی گروه تِکا هم نیست!','بخواه تا معمار رو برات باز کنم!'],s:'#arch'},
-{k:['بی ام دبلیو','bmw','ماشین کلاسیک','موزه'],t:'موزه‌ی BMW',
- a:'موزه‌ی شبانه‌ی BMW تِکا: سه اسطوره‌ی کلاسیک (507 سال ۱۹۵۶، 2002 سال ۱۹۶۸ و E30 M3 سال ۱۹۸۸) با پروفیل واقعی بدنه و صدها قطعه‌ی سه‌بعدی ساخته شدن — جلوپنجره‌ی کلیوی، چراغ‌های گرد درخشان، سپر کروم، اگزوز دوقلو و همه‌چیز! با موس بچرخونشون.',
- m:['جلوپنجره‌ی کلیوی، امضای BMW از ۱۹۳۳ تا الان بوده!'],s:'#bmw'}
+{k:['فراسوی','کهکشان ذرات','universe','ذرات نورانی'],t:'فراسویِ طلایی',
+ a:'«فراسویِ طلایی» شاهکار سه‌بعدی تِکاست: ۲۶ هزار ذره‌ی نورانی که با یک کلیک بین ۵ جهان به پرواز درمی‌آیند — کهکشان مارپیچی، نشان تِکا، رشته‌ی DNA، سیاره‌ی حلقه‌دار و سحابی — با چرخش گردابی حین پرواز! با موس هم می‌تونی جهان رو بچرخونی.',
+ m:['هر ذره حین مورف، مسیر و تأخیر منحصربه‌فرد خودش رو داره — هیچ دو مورفی شبیه هم نیست!'],s:'#universe'}
 ];
 try{
   var kbEl=document.getElementById('kbCount');
@@ -3163,7 +3168,7 @@ var THANKS=['خواهش می‌کنم رفیق! من همیشه همین‌جا�
 var ti=0;
 var FALLBACKS=[
 'این یکی از خزانه‌ام خارج بود! ولی از علم، تاریخ، شعر، تکنولوژی بپرس — یا بگو «معمار رو باز کن» تا طرح سایتت رو بسازم!',
-'هنوز همه‌چیز بلد نیستم؛ اما «سیاه‌چاله چیه؟»، «معمار طلایی چیه؟» یا «موزه BMW کجاست؟» رو امتحان کن!',
+'هنوز همه‌چیز بلد نیستم؛ اما «سیاه‌چاله چیه؟»، «معمار طلایی چیه؟» یا «فراسوی طلایی چیه؟» رو امتحان کن!',
 'سؤال سختی بود! یه مبحث دیگه بپرس، یا بگو «یاد بگیر: سؤال = جواب» تا همیشه بلدش باشم!'
 ];
 var fbI=0;
@@ -3245,8 +3250,8 @@ try{
         try{u=window.TEKA_AUTH?window.TEKA_AUTH.user():null;}catch(e){}
         if(u&&u.name&&!aiName)aiName=u.name;
         var greet=aiName
-          ?('سلام '+aiName+' جان! خوش برگشتی — من «هوشِ تِکا»م. بگو «معمار رو باز کن» تا طرح سایتت رو بسازم، یا هر سؤالی داری بپرس!')
-          :'سلام رفیق! من «هوشِ تِکا»م — مغز طلایی و کاملاً محلی. می‌تونم برات طرح سایت بسازم (بگو «معمار رو باز کن»)، ماشین‌های BMW واقعی رو نشونت بدم، یا هر سؤالی جواب بدم!';
+          ?('سلام '+aiName+' جان! خوش برگشتی — من «هوشِ تِکا»م. بگو «معمار رو باز کن» تا طرح سایتت رو بسازم، یا «کهکشان رو نشونم بده» تا فراسوی طلایی باز بشه!')
+          :'سلام رفیق! من «هوشِ تِکا»م — مغز طلایی و کاملاً محلی. می‌تونم برات طرح سایت بسازم (بگو «معمار رو باز کن»)، جهان ۲۶ هزار ذره‌ای رو نشونت بدم (بگو «کهکشان»)، یا هر سؤالی جواب بدم!';
         setTimeout(function(){botSay(greet);},450);
       }
     }
@@ -3291,11 +3296,11 @@ try{
         botSay(aiName?('تو '+aiName+' هستی — البته!'):'هنوز اسمت رو نگفتی! بگو «اسمم ... هست».');return;
       }
       if(hasAny(n,['معمار','طراح خودکار','طراحی خودکار','ساخت سایت خودکار','سایت پیش فرض','سایت پیش‌فرض','طرح سایت بساز'])){
-        botSay('معمارِ طلایی رو برات باز می‌کنم! ۷ سؤال می‌پرسه و از بیش از ۳۹ میلیون ترکیب، طرح اولیه‌ی سایتت رو می‌سازه — یادت باشه این فقط برای درک سلیقه‌ت و بهتر شدن خدماته؛ حتی یک صدم قدرت واقعی تِکاهم نیست!',null,function(){T.goTo(document.getElementById('arch'));});
+        botSay('معمارِ طلایی رو برات باز می‌کنم! ۷ سؤال می‌پرسه و از بیش از ۲۴۵ میلیون ترکیب، طرح اولیه‌ی سایتت رو می‌سازه — یادت باشه این فقط برای درک سلیقه‌ت و بهتر شدن خدماته؛ حتی یک صدم قدرت واقعی تِکاهم نیست!',null,function(){T.goTo(document.getElementById('arch'));});
         return;
       }
-      if(hasAny(n,['بی ام دبلیو','bmw','ماشین کلاسیک','موزه','سه بعدی','سهبعدی'])){
-        botSay('موزه‌ی شبانه‌ی BMW رو برات باز می‌کنم — سه اسطوره‌ی کلاسیک با بدنه‌ی واقعی، جلوپنجره‌ی کلیوی و نورپردازی سینمایی! با موس بچرخونشون!',null,function(){T.goTo(document.getElementById('bmw'));});
+      if(hasAny(n,['فراسوی','کهکشان','ذرات','universe','جهان ذرات','سحابی'])){
+        botSay('فراسویِ طلایی رو برات باز می‌کنم — ۲۶ هزار ذره‌ی نورانی که بین کهکشان، نشان تِکا، DNA، سیاره‌ی حلقه‌دار و سحابی به پرواز درمی‌آیند! با موس بچرخونش!',null,function(){T.goTo(document.getElementById('universe'));});
         return;
       }
       if(n.indexOf('بیشتر بگو')>=0||n==='بیشتر'){
@@ -3585,7 +3590,7 @@ try{
       {t:'خدمت‌ها',d:'بخش',ic:'i-arrow',run:function(){T.goTo(document.getElementById('services'));}},
       {t:'کوفه‌خانه‌ی طلایی',d:'بخش',ic:'i-calc',run:function(){T.goTo(document.getElementById('kof'));}},
       {t:'معمارِ طلایی — طراح سایت',d:'بخش',ic:'i-arch',run:function(){T.goTo(document.getElementById('arch'));}},
-      {t:'موزه‌ی سه‌بعدی BMW',d:'بخش',ic:'i-car',run:function(){T.goTo(document.getElementById('bmw'));}},
+      {t:'فراسویِ طلایی — جهان ذرات',d:'بخش',ic:'i-star',run:function(){T.goTo(document.getElementById('universe'));}},
       {t:'امضای طلایی',d:'بخش',ic:'i-pen',run:function(){T.goTo(document.getElementById('lab'));}},
       {t:'هوشِ طلایی',d:'بخش',ic:'i-bolt',run:function(){T.goTo(document.getElementById('ai'));}},
       {t:'ذهن‌خوانی',d:'بخش',ic:'i-eye',run:function(){T.goTo(document.getElementById('magic'));}},
